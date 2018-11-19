@@ -353,6 +353,17 @@
     
 
 
+    <!-- http://purl.org/spar/bido-standard-bibliometric-measures#Quartile -->
+
+    <owl:Class rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures#Quartile">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures#QuartileCategory"/>
+        <rdfs:comment>The quartile is an indicator that serves to evaluate the relative importance of a journal within the total number of journals in its area, e.g., Q1.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.org/spar/bido-core</rdfs:isDefinedBy>
+        <rdfs:label>Quartile</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/spar/bido-standard-bibliometric-measures#QuartileCategory -->
 
     <owl:Class rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures#QuartileCategory">
