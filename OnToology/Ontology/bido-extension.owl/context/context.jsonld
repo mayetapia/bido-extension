@@ -1,7 +1,28 @@
 {
   "@context" : {
+    "LectureNotes" : {
+      "@id" : "http://purl.org/spar/fabio/LectureNotes"
+    },
+    "holdsAccount" : {
+      "@id" : "http://xmlns.com/foaf/0.1/holdsAccount",
+      "@type" : "@id"
+    },
+    "Index" : {
+      "@id" : "http://purl.org/spar/fabio/Index"
+    },
+    "realizationOf" : {
+      "@id" : "http://purl.org/vocab/frbr/core#realizationOf",
+      "@type" : "@id"
+    },
     "BibliometricMeasure" : {
       "@id" : "http://purl.org/spar/bido/BibliometricMeasure"
+    },
+    "term_status" : {
+      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
+    },
+    "member" : {
+      "@id" : "http://xmlns.com/foaf/0.1/member",
+      "@type" : "@id"
     },
     "versionInfo" : {
       "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
@@ -10,49 +31,336 @@
       "@id" : "http://purl.org/spar/bido/holdsBibliometricDataInTime",
       "@type" : "@id"
     },
+    "Addendum" : {
+      "@id" : "http://purl.org/spar/fabio/Addendum"
+    },
+    "Email" : {
+      "@id" : "http://purl.org/spar/fabio/Email"
+    },
+    "made" : {
+      "@id" : "http://xmlns.com/foaf/0.1/made",
+      "@type" : "@id"
+    },
+    "Comment" : {
+      "@id" : "http://purl.org/spar/fabio/Comment"
+    },
+    "ReportDocument" : {
+      "@id" : "http://purl.org/spar/fabio/ReportDocument"
+    },
+    "ConferencePoster" : {
+      "@id" : "http://purl.org/spar/fabio/ConferencePoster"
+    },
+    "Organization" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Organization"
+    },
+    "NewsItem" : {
+      "@id" : "http://purl.org/spar/fabio/NewsItem"
+    },
     "Thing" : {
       "@id" : "http://www.w3.org/2002/07/owl#Thing"
     },
+    "ExpressionCollection" : {
+      "@id" : "http://purl.org/spar/fabio/ExpressionCollection"
+    },
+    "age" : {
+      "@id" : "http://xmlns.com/foaf/0.1/age"
+    },
+    "Supplement" : {
+      "@id" : "http://purl.org/spar/fabio/Supplement"
+    },
+    "PeriodicalVolume" : {
+      "@id" : "http://purl.org/spar/fabio/PeriodicalVolume"
+    },
+    "DataMangementPlan" : {
+      "@id" : "http://purl.org/spar/fabio/DataMangementPlan"
+    },
     "priorVersion" : {
       "@id" : "http://www.w3.org/2002/07/owl#priorVersion"
+    },
+    "part" : {
+      "@id" : "http://purl.org/vocab/frbr/core#part",
+      "@type" : "@id"
+    },
+    "aimChatID" : {
+      "@id" : "http://xmlns.com/foaf/0.1/aimChatID",
+      "@type" : "@id"
+    },
+    "maker" : {
+      "@id" : "http://xmlns.com/foaf/0.1/maker",
+      "@type" : "@id"
+    },
+    "birthday" : {
+      "@id" : "http://xmlns.com/foaf/0.1/birthday"
+    },
+    "GanttChart" : {
+      "@id" : "http://purl.org/spar/fabio/GanttChart"
+    },
+    "Entry" : {
+      "@id" : "http://purl.org/spar/fabio/Entry"
     },
     "withBibliometricData" : {
       "@id" : "http://purl.org/spar/bido/withBibliometricData",
       "@type" : "@id"
     },
+    "WebContent" : {
+      "@id" : "http://purl.org/spar/fabio/WebContent"
+    },
+    "MetadataDocument" : {
+      "@id" : "http://purl.org/spar/fabio/MetadataDocument"
+    },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "realization" : {
+      "@id" : "http://purl.org/vocab/frbr/core#realization",
+      "@type" : "@id"
+    },
+    "Repository" : {
+      "@id" : "http://purl.org/spar/fabio/Repository"
+    },
+    "mbox" : {
+      "@id" : "http://xmlns.com/foaf/0.1/mbox",
+      "@type" : "@id"
+    },
+    "PhDSymposiumPaper" : {
+      "@id" : "http://purl.org/spar/fabio/PhDSymposiumPaper"
+    },
+    "Chapter" : {
+      "@id" : "http://purl.org/spar/fabio/Chapter"
+    },
+    "Expression" : {
+      "@id" : "http://purl.org/spar/fabio/Expression"
+    },
+    "gender" : {
+      "@id" : "http://xmlns.com/foaf/0.1/gender"
+    },
+    "BriefReport" : {
+      "@id" : "http://purl.org/spar/fabio/BriefReport"
+    },
+    "embodiment" : {
+      "@id" : "http://purl.org/vocab/frbr/core#embodiment",
+      "@type" : "@id"
+    },
+    "yahooChatID" : {
+      "@id" : "http://xmlns.com/foaf/0.1/yahooChatID",
+      "@type" : "@id"
     },
     "Person" : {
       "@id" : "http://xmlns.com/foaf/0.1/Person"
     },
+    "DemoPaper" : {
+      "@id" : "http://purl.org/spar/fabio/DemoPaper"
+    },
+    "Quartile" : {
+      "@id" : "http://purl.org/spar/bido-standard-bibliometric-measures#Quartile"
+    },
+    "jabberID" : {
+      "@id" : "http://xmlns.com/foaf/0.1/jabberID",
+      "@type" : "@id"
+    },
+    "mbox_sha1sum" : {
+      "@id" : "http://xmlns.com/foaf/0.1/mbox_sha1sum",
+      "@type" : "@id"
+    },
+    "embodimentOf" : {
+      "@id" : "http://purl.org/vocab/frbr/core#embodimentOf",
+      "@type" : "@id"
+    },
+    "Quotation" : {
+      "@id" : "http://purl.org/spar/fabio/Quotation"
+    },
+    "PeriodicalItem" : {
+      "@id" : "http://purl.org/spar/fabio/PeriodicalItem"
+    },
+    "Book" : {
+      "@id" : "http://purl.org/spar/fabio/Book"
+    },
+    "tipjar" : {
+      "@id" : "http://xmlns.com/foaf/0.1/tipjar",
+      "@type" : "@id"
+    },
+    "Agent" : {
+      "@id" : "http://purl.org/dc/terms/Agent"
+    },
     "creator" : {
       "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "Article" : {
+      "@id" : "http://purl.org/spar/fabio/Article"
+    },
+    "ComputerProgram" : {
+      "@id" : "http://purl.org/spar/fabio/ComputerProgram"
+    },
+    "GrantApplicationDocument" : {
+      "@id" : "http://purl.org/spar/fabio/GrantApplicationDocument"
+    },
+    "topic_interest" : {
+      "@id" : "http://xmlns.com/foaf/0.1/topic_interest",
+      "@type" : "@id"
+    },
+    "Manuscript" : {
+      "@id" : "http://purl.org/spar/fabio/Manuscript"
+    },
+    "QuartileCategory" : {
+      "@id" : "http://purl.org/spar/bido-standard-bibliometric-measures#QuartileCategory"
+    },
+    "weblog" : {
+      "@id" : "http://xmlns.com/foaf/0.1/weblog",
+      "@type" : "@id"
+    },
+    "Figure" : {
+      "@id" : "http://purl.org/spar/fabio/Figure"
     },
     "rights" : {
       "@id" : "http://purl.org/dc/elements/1.1/rights"
     },
+    "skypeID" : {
+      "@id" : "http://xmlns.com/foaf/0.1/skypeID"
+    },
+    "partOf" : {
+      "@id" : "http://purl.org/vocab/frbr/core#partOf",
+      "@type" : "@id"
+    },
+    "status" : {
+      "@id" : "http://xmlns.com/foaf/0.1/status"
+    },
+    "Work" : {
+      "@id" : "http://purl.org/spar/fabio/Work"
+    },
+    "PolicyDocument" : {
+      "@id" : "http://purl.org/spar/fabio/PolicyDocument"
+    },
+    "CaseForSupportDocument" : {
+      "@id" : "http://purl.org/spar/fabio/CaseForSupportDocument"
+    },
+    "Spreadsheet" : {
+      "@id" : "http://purl.org/spar/fabio/Spreadsheet"
+    },
+    "account" : {
+      "@id" : "http://xmlns.com/foaf/0.1/account",
+      "@type" : "@id"
+    },
+    "Nanopublication" : {
+      "@id" : "http://purl.org/spar/fabio/Nanopublication"
+    },
+    "Abstract" : {
+      "@id" : "http://purl.org/spar/fabio/Abstract"
+    },
     "isDefinedBy" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
     },
+    "SupplementaryInformation" : {
+      "@id" : "http://purl.org/spar/fabio/SupplementaryInformation"
+    },
+    "Oration" : {
+      "@id" : "http://purl.org/spar/fabio/Oration"
+    },
+    "CallForApplications" : {
+      "@id" : "http://purl.org/spar/fabio/CallForApplications"
+    },
+    "Movie" : {
+      "@id" : "http://purl.org/spar/fabio/Movie"
+    },
     "title" : {
       "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "ProjectPlan" : {
+      "@id" : "http://purl.org/spar/fabio/ProjectPlan"
+    },
+    "Excerpt" : {
+      "@id" : "http://purl.org/spar/fabio/Excerpt"
+    },
+    "DataFile" : {
+      "@id" : "http://purl.org/spar/fabio/DataFile"
+    },
+    "Cover" : {
+      "@id" : "http://purl.org/spar/fabio/Cover"
+    },
+    "RapidCommunication" : {
+      "@id" : "http://purl.org/spar/fabio/RapidCommunication"
     },
     "hasMeasure" : {
       "@id" : "http://purl.org/spar/bido/hasMeasure",
       "@type" : "@id"
     },
+    "interest" : {
+      "@id" : "http://xmlns.com/foaf/0.1/interest",
+      "@type" : "@id"
+    },
     "date" : {
       "@id" : "http://purl.org/dc/elements/1.1/date"
     },
+    "Manifestation" : {
+      "@id" : "http://purl.org/spar/fabio/Manifestation"
+    },
+    "PersonalCommunication" : {
+      "@id" : "http://purl.org/spar/fabio/PersonalCommunication"
+    },
+    "PosterPaper" : {
+      "@id" : "http://purl.org/spar/fabio/PosterPaper"
+    },
+    "Presentation" : {
+      "@id" : "http://purl.org/spar/fabio/Presentation"
+    },
+    "AudioDocument" : {
+      "@id" : "http://purl.org/spar/fabio/AudioDocument"
+    },
+    "icqChatID" : {
+      "@id" : "http://xmlns.com/foaf/0.1/icqChatID",
+      "@type" : "@id"
+    },
+    "openid" : {
+      "@id" : "http://xmlns.com/foaf/0.1/openid",
+      "@type" : "@id"
+    },
     "comment" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "ProceedingsPaper" : {
+      "@id" : "http://purl.org/spar/fabio/ProceedingsPaper"
+    },
+    "Group" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Group"
+    },
+    "InstructionManual" : {
+      "@id" : "http://purl.org/spar/fabio/InstructionManual"
+    },
+    "Table" : {
+      "@id" : "http://purl.org/spar/fabio/Table"
+    },
+    "msnChatID" : {
+      "@id" : "http://xmlns.com/foaf/0.1/msnChatID",
+      "@type" : "@id"
+    },
+    "Editorial" : {
+      "@id" : "http://purl.org/spar/fabio/Editorial"
+    },
+    "CategorialBibliometricData" : {
+      "@id" : "http://purl.org/spar/bido/CategorialBibliometricData"
+    },
+    "VocabularyDocument" : {
+      "@id" : "http://purl.org/spar/fabio/VocabularyDocument"
+    },
+    "PeriodicalIssue" : {
+      "@id" : "http://purl.org/spar/fabio/PeriodicalIssue"
     },
     "Journal" : {
       "@id" : "http://purl.org/spar/fabio/Journal"
     },
     "description" : {
       "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "Database" : {
+      "@id" : "http://purl.org/spar/fabio/Database"
+    },
+    "SpecificationDocument" : {
+      "@id" : "http://purl.org/spar/fabio/SpecificationDocument"
+    },
+    "DustJacket" : {
+      "@id" : "http://purl.org/spar/fabio/DustJacket"
+    },
+    "Letter" : {
+      "@id" : "http://purl.org/spar/fabio/Letter"
     }
   }
 }
