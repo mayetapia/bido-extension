@@ -1060,6 +1060,34 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures#author-number-documents">
         <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty>
+                            <rdf:Description>
+                                <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
+                            </rdf:Description>
+                        </owl:onProperty>
+                        <owl:allValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty>
+                                    <rdf:Description>
+                                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+                                    </rdf:Description>
+                                </owl:onProperty>
+                                <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+                            </owl:Restriction>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
         <rdfs:comment>It is the count of all the documents or contributions published by a certain author.</rdfs:comment>
         <rdfs:isDefinedBy>http://purl.org/spar/bido-standard-bibliometric-measures</rdfs:isDefinedBy>
         <rdfs:label>author number documents</rdfs:label>
