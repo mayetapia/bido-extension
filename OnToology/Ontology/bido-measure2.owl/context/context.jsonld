@@ -151,9 +151,6 @@
     "DemoPaper" : {
       "@id" : "http://purl.org/spar/fabio/DemoPaper"
     },
-    "Quartile" : {
-      "@id" : "http://purl.org/spar/bido-standard-bibliometric-measures#Quartile"
-    },
     "jabberID" : {
       "@id" : "http://xmlns.com/foaf/0.1/jabberID",
       "@type" : "@id"
@@ -288,7 +285,7 @@
       "@id" : "http://purl.org/spar/fabio/RapidCommunication"
     },
     "hasMeasure" : {
-      "@id" : "http://purl.org/spar/bido/hasMeasure",
+      "@id" : "http://purl.org/spar/bido-standard-bibliometric-measures#hasMeasure",
       "@type" : "@id"
     },
     "interest" : {

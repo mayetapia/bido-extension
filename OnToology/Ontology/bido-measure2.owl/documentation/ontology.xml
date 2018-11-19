@@ -100,6 +100,16 @@
     
 
 
+    <!-- http://purl.org/spar/bido-standard-bibliometric-measures#hasMeasure -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures#hasMeasure">
+        <rdfs:comment xml:lang="en">This object property allows one to specify the kind of measure related with a bibliometric data (e.g., h-index, e-index, journal impact factor).</rdfs:comment>
+        <rdfs:label xml:lang="en">has measure</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/spar/bido-standard-bibliometric-measures#hasQuartile -->
 
 
@@ -128,13 +138,6 @@
         <rdfs:comment xml:lang="en">An object property relating a journal with its area and discipline of study</rdfs:comment>
         <rdfs:label xml:lang="en">relates to subject category</rdfs:label>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/spar/bido/hasMeasure -->
-
-
-    <owl:ObjectProperty rdf:about="http://purl.org/spar/bido/hasMeasure"/>
     
 
 
@@ -421,18 +424,6 @@
 
     <owl:Class rdf:about="http://purl.org/dc/terms/Agent">
         <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/spar/bido-standard-bibliometric-measures#Quartile -->
-
-
-    <owl:Class rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures#Quartile">
-        <rdfs:subClassOf rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures#QuartileCategory"/>
-        <rdfs:comment xml:lang="en">The quartile is an indicator that serves to evaluate the relative importance of a journal within the total number of journals in its area, e.g., Q1.</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">http://purl.org/spar/bido-core</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">Quartile</rdfs:label>
     </owl:Class>
     
 
@@ -1133,7 +1124,6 @@
 
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures#Q1">
-        <rdf:type rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures#Quartile"/>
         <rdfs:comment xml:lang="en">If a list of 1000 journals is ordered from highest to lowest impact factor, the journals between the number 1 to 250 are Quartile 1 (Q1).</rdfs:comment>
         <rdfs:isDefinedBy>http://purl.org/spar/bido-standard-bibliometric-measures</rdfs:isDefinedBy>
     </owl:NamedIndividual>
@@ -1144,7 +1134,6 @@
 
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures#Q2">
-        <rdf:type rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures#Quartile"/>
         <rdfs:comment xml:lang="en">If a list of 1000 journals is ordered from highest to lowest impact factor, the journals between the number 251 to 500 are Quartile 2 (Q2).</rdfs:comment>
         <rdfs:isDefinedBy>http://purl.org/spar/bido-standard-bibliometric-measures</rdfs:isDefinedBy>
     </owl:NamedIndividual>
@@ -1155,7 +1144,6 @@
 
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures#Q3">
-        <rdf:type rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures#Quartile"/>
         <rdfs:comment xml:lang="en">If a list of 1000 journals is ordered from highest to lowest impact factor, the journals between the number 501 to 750 are Quartile 3 (Q3).</rdfs:comment>
         <rdfs:isDefinedBy>http://purl.org/spar/bido-standard-bibliometric-measures</rdfs:isDefinedBy>
     </owl:NamedIndividual>
@@ -1166,7 +1154,6 @@
 
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures#Q4">
-        <rdf:type rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures#Quartile"/>
         <rdfs:comment xml:lang="en">If a list of 1000 journals is ordered from highest to lowest impact factor, the journals between the number 751 to 1000 are Quartile 4 (Q4).</rdfs:comment>
         <rdfs:isDefinedBy>http://purl.org/spar/bido-standard-bibliometric-measures</rdfs:isDefinedBy>
     </owl:NamedIndividual>
@@ -1178,34 +1165,6 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures#author-number-documents">
         <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty>
-                    <rdf:Description>
-                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
-                    </rdf:Description>
-                </owl:onProperty>
-                <owl:allValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty>
-                            <rdf:Description>
-                                <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
-                            </rdf:Description>
-                        </owl:onProperty>
-                        <owl:allValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty>
-                                    <rdf:Description>
-                                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
-                                    </rdf:Description>
-                                </owl:onProperty>
-                                <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-                            </owl:Restriction>
-                        </owl:allValuesFrom>
-                    </owl:Restriction>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdf:type>
         <rdfs:comment>It is the count of all the documents or contributions published by a certain author.</rdfs:comment>
         <rdfs:isDefinedBy>http://purl.org/spar/bido-standard-bibliometric-measures</rdfs:isDefinedBy>
         <rdfs:label>author number documents</rdfs:label>
@@ -1218,34 +1177,6 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures#paper-citation-count">
         <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty>
-                    <rdf:Description>
-                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
-                    </rdf:Description>
-                </owl:onProperty>
-                <owl:allValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty>
-                            <rdf:Description>
-                                <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
-                            </rdf:Description>
-                        </owl:onProperty>
-                        <owl:allValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty>
-                                    <rdf:Description>
-                                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
-                                    </rdf:Description>
-                                </owl:onProperty>
-                                <owl:allValuesFrom rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
-                            </owl:Restriction>
-                        </owl:allValuesFrom>
-                    </owl:Restriction>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdf:type>
         <rdfs:comment>It is the count of all the citation received by one paper of a certain author.</rdfs:comment>
         <rdfs:isDefinedBy>http://purl.org/spar/bido-standard-bibliometric-measures</rdfs:isDefinedBy>
         <rdfs:label>paper citation count</rdfs:label>
@@ -1258,34 +1189,6 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/author-citation-count">
         <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty>
-                    <rdf:Description>
-                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
-                    </rdf:Description>
-                </owl:onProperty>
-                <owl:allValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty>
-                            <rdf:Description>
-                                <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
-                            </rdf:Description>
-                        </owl:onProperty>
-                        <owl:allValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty>
-                                    <rdf:Description>
-                                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
-                                    </rdf:Description>
-                                </owl:onProperty>
-                                <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-                            </owl:Restriction>
-                        </owl:allValuesFrom>
-                    </owl:Restriction>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdf:type>
         <rdfs:comment>It is the count of all the citation received by all the papers of a certain author.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures"/>
         <rdfs:label>author citation count</rdfs:label>
@@ -1298,34 +1201,6 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/e-index">
         <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty>
-                    <rdf:Description>
-                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
-                    </rdf:Description>
-                </owl:onProperty>
-                <owl:allValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty>
-                            <rdf:Description>
-                                <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
-                            </rdf:Description>
-                        </owl:onProperty>
-                        <owl:allValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty>
-                                    <rdf:Description>
-                                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
-                                    </rdf:Description>
-                                </owl:onProperty>
-                                <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-                            </owl:Restriction>
-                        </owl:allValuesFrom>
-                    </owl:Restriction>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdf:type>
         <rdfs:comment>The e-index is aimed at considering the contributions of excess citations, which are mainly from highly cited papers. It is a necessary h-index complement, especially for evaluating highly cited scientists or for precisely comparing the scientific output of a group of scientists having an identical h-index.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures"/>
         <rdfs:label>e-index</rdfs:label>
@@ -1338,34 +1213,6 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/h-index">
         <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty>
-                    <rdf:Description>
-                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
-                    </rdf:Description>
-                </owl:onProperty>
-                <owl:allValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty>
-                            <rdf:Description>
-                                <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
-                            </rdf:Description>
-                        </owl:onProperty>
-                        <owl:allValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty>
-                                    <rdf:Description>
-                                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
-                                    </rdf:Description>
-                                </owl:onProperty>
-                                <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-                            </owl:Restriction>
-                        </owl:allValuesFrom>
-                    </owl:Restriction>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdf:type>
         <rdfs:comment>The h-index is an index that attempts to measure both the productivity and impact of the published work of a scientist or scholar. The index is based on the set of the scientist&apos;s most cited papers and the number of citations that they have received in other publications. The index can also be applied to the productivity and impact of a group of scientists, such as a department or university or country, as well as a scholarly journal.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures"/>
         <rdfs:label>h-index</rdfs:label>
@@ -1378,34 +1225,6 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/journal-impact-factor">
         <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty>
-                    <rdf:Description>
-                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
-                    </rdf:Description>
-                </owl:onProperty>
-                <owl:allValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty>
-                            <rdf:Description>
-                                <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
-                            </rdf:Description>
-                        </owl:onProperty>
-                        <owl:allValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty>
-                                    <rdf:Description>
-                                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
-                                    </rdf:Description>
-                                </owl:onProperty>
-                                <owl:allValuesFrom rdf:resource="http://purl.org/spar/fabio/Journal"/>
-                            </owl:Restriction>
-                        </owl:allValuesFrom>
-                    </owl:Restriction>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdf:type>
         <rdfs:comment>The impact factor of an academic journal is a measure reflecting the average number of citations to recent articles published in the journal. It is frequently used as a proxy for the relative importance of a journal within its field, with journals with higher impact factors deemed to be more important than those with lower ones.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures"/>
         <rdfs:label>journal impact factor</rdfs:label>

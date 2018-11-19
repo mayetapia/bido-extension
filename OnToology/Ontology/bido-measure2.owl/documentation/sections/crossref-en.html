@@ -267,10 +267,6 @@ This section provides details for each class and property defined by BiDO-Standa
          </a>
       </li>
       <li>
-         <a href="#Quartile"
-            title="http://purl.org/spar/bido-standard-bibliometric-measures#Quartile">Quartile</a>
-      </li>
-      <li>
          <a href="#QuartileCategory"
             title="http://purl.org/spar/bido-standard-bibliometric-measures#QuartileCategory">Quartile Category</a>
       </li>
@@ -1279,41 +1275,6 @@ This section provides details for each class and property defined by BiDO-Standa
          </dd>
       </dl>
    </div>
-   <div class="entity" id="Quartile">
-      <h3>Quartile<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/spar/bido-standard-bibliometric-measures#Quartile</p>
-      <div class="comment">
-         <span class="markdown">The quartile is an indicator that serves to evaluate the relative importance of a journal within the total number of journals in its area, e.g., Q1.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>http://purl.org/spar/bido-standard-bibliometric-measures</dd>
-      </dl>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#QuartileCategory"
-               title="http://purl.org/spar/bido-standard-bibliometric-measures#QuartileCategory">Quartile Category</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>has members</dt>
-         <dd>
-            <a href="#Q1"
-               title="http://purl.org/spar/bido-standard-bibliometric-measures#Q1">q1</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Q2"
-               title="http://purl.org/spar/bido-standard-bibliometric-measures#Q2">q2</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Q3"
-               title="http://purl.org/spar/bido-standard-bibliometric-measures#Q3">q3</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Q4"
-               title="http://purl.org/spar/bido-standard-bibliometric-measures#Q4">q4</a>
-            <sup class="type-ni" title="named individual">ni</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="QuartileCategory">
       <h3>Quartile Category<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -1333,12 +1294,6 @@ This section provides details for each class and property defined by BiDO-Standa
          <dd>
             <span class="dotted"
                   title="http://purl.org/spar/bido/CategorialBibliometricData">categorial bibliometric data</span>
-         </dd>
-         <dt>has sub-classes</dt>
-         <dd>
-            <a href="#Quartile"
-               title="http://purl.org/spar/bido-standard-bibliometric-measures#Quartile">Quartile</a>
-            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -1539,6 +1494,10 @@ This section provides details for each class and property defined by BiDO-Standa
          </a>
       </li>
       <li>
+         <a href="#hasMeasure"
+            title="http://purl.org/spar/bido-standard-bibliometric-measures#hasMeasure">has measure</a>
+      </li>
+      <li>
          <a href="#hasQuartile"
             title="http://purl.org/spar/bido-standard-bibliometric-measures#hasQuartile">has quartile</a>
       </li>
@@ -1658,6 +1617,17 @@ This section provides details for each class and property defined by BiDO-Standa
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasMeasure">
+      <h3>has measure<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/spar/bido-standard-bibliometric-measures#hasMeasure</p>
+      <div class="comment">
+         <span class="markdown">This object property allows one to specify the kind of measure related with a bibliometric data (e.g., h-index, e-index, journal impact factor).</span>
       </div>
    </div>
    <div class="entity" id="hasQuartile">
@@ -2140,7 +2110,6 @@ This section provides details for each class and property defined by BiDO-Standa
             <span class="dotted" title="http://purl.org/spar/bido/BibliometricMeasure">bibliometric measure</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dd/>
       </dl>
    </div>
    <div class="entity" id="author-number-documents">
@@ -2163,7 +2132,6 @@ This section provides details for each class and property defined by BiDO-Standa
             <span class="dotted" title="http://purl.org/spar/bido/BibliometricMeasure">bibliometric measure</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dd/>
       </dl>
    </div>
    <div class="entity" id="http://purl.org/spar/bido/e-index">
@@ -2188,7 +2156,6 @@ This section provides details for each class and property defined by BiDO-Standa
             <span class="dotted" title="http://purl.org/spar/bido/BibliometricMeasure">bibliometric measure</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dd/>
       </dl>
    </div>
    <div class="entity" id="http://purl.org/spar/bido/h-index">
@@ -2213,7 +2180,6 @@ This section provides details for each class and property defined by BiDO-Standa
             <span class="dotted" title="http://purl.org/spar/bido/BibliometricMeasure">bibliometric measure</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dd/>
       </dl>
    </div>
    <div class="entity" id="http://purl.org/spar/bido/journal-impact-factor">
@@ -2238,7 +2204,6 @@ This section provides details for each class and property defined by BiDO-Standa
             <span class="dotted" title="http://purl.org/spar/bido/BibliometricMeasure">bibliometric measure</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dd/>
       </dl>
    </div>
    <div class="entity" id="paper-citation-count">
@@ -2261,7 +2226,6 @@ This section provides details for each class and property defined by BiDO-Standa
             <span class="dotted" title="http://purl.org/spar/bido/BibliometricMeasure">bibliometric measure</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dd/>
       </dl>
    </div>
    <div class="entity" id="Q1">
@@ -2278,14 +2242,6 @@ This section provides details for each class and property defined by BiDO-Standa
          <dt>Is defined by</dt>
          <dd>http://purl.org/spar/bido-standard-bibliometric-measures</dd>
       </dl>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#Quartile"
-               title="http://purl.org/spar/bido-standard-bibliometric-measures#Quartile">Quartile</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
    </div>
    <div class="entity" id="Q2">
       <h3>q2<sup class="type-ni" title="named individual">ni</sup>
@@ -2300,14 +2256,6 @@ This section provides details for each class and property defined by BiDO-Standa
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>http://purl.org/spar/bido-standard-bibliometric-measures</dd>
-      </dl>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#Quartile"
-               title="http://purl.org/spar/bido-standard-bibliometric-measures#Quartile">Quartile</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
       </dl>
    </div>
    <div class="entity" id="Q3">
@@ -2324,14 +2272,6 @@ This section provides details for each class and property defined by BiDO-Standa
          <dt>Is defined by</dt>
          <dd>http://purl.org/spar/bido-standard-bibliometric-measures</dd>
       </dl>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#Quartile"
-               title="http://purl.org/spar/bido-standard-bibliometric-measures#Quartile">Quartile</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
    </div>
    <div class="entity" id="Q4">
       <h3>q4<sup class="type-ni" title="named individual">ni</sup>
@@ -2346,14 +2286,6 @@ This section provides details for each class and property defined by BiDO-Standa
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>http://purl.org/spar/bido-standard-bibliometric-measures</dd>
-      </dl>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#Quartile"
-               title="http://purl.org/spar/bido-standard-bibliometric-measures#Quartile">Quartile</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
       </dl>
    </div>
 </div><div id="legend">
