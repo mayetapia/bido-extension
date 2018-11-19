@@ -33,6 +33,9 @@
 # http://purl.org/dc/elements/1.1/title
 <http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # 
 # 
 # #################################################################
@@ -41,6 +44,20 @@
 # #
 # #################################################################
 # 
+# 
+# http://purl.org/spar/bido-standard-bibliometric-measures#hasQuartile
+<http://purl.org/spar/bido-standard-bibliometric-measures#hasQuartile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/bido-standard-bibliometric-measures#hasQuartile> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/bido-standard-bibliometric-measures#Quartile> .
+<http://purl.org/spar/bido-standard-bibliometric-measures#hasQuartile> <http://www.w3.org/2000/01/rdf-schema#comment> "An object property relating a journal in determined area and discipline with its quartile." .
+<http://purl.org/spar/bido-standard-bibliometric-measures#hasQuartile> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/spar/bido-core" .
+<http://purl.org/spar/bido-standard-bibliometric-measures#hasQuartile> <http://www.w3.org/2000/01/rdf-schema#label> "has quartile" .
+# 
+# http://purl.org/spar/bido-standard-bibliometric-measures#relatesToSubjectCategory
+<http://purl.org/spar/bido-standard-bibliometric-measures#relatesToSubjectCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/bido-standard-bibliometric-measures#relatesToSubjectCategory> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://purl.org/spar/bido-standard-bibliometric-measures#relatesToSubjectCategory> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/spar/bido-core" .
+<http://purl.org/spar/bido-standard-bibliometric-measures#relatesToSubjectCategory> <http://www.w3.org/2000/01/rdf-schema#label> "An object property relating a journal with its area and discipline of study" .
+<http://purl.org/spar/bido-standard-bibliometric-measures#relatesToSubjectCategory> <http://www.w3.org/2000/01/rdf-schema#label> "relates to subject category" .
 # 
 # http://purl.org/spar/bido/hasMeasure
 <http://purl.org/spar/bido/hasMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -51,6 +68,121 @@
 # http://purl.org/spar/bido/withBibliometricData
 <http://purl.org/spar/bido/withBibliometricData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
+# http://purl.org/vocab/frbr/core#embodiment
+<http://purl.org/vocab/frbr/core#embodiment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/vocab/frbr/core#embodimentOf
+<http://purl.org/vocab/frbr/core#embodimentOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/vocab/frbr/core#part
+<http://purl.org/vocab/frbr/core#part> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/vocab/frbr/core#partOf
+<http://purl.org/vocab/frbr/core#partOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/vocab/frbr/core#realization
+<http://purl.org/vocab/frbr/core#realization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/vocab/frbr/core#realizationOf
+<http://purl.org/vocab/frbr/core#realizationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://xmlns.com/foaf/0.1/account
+<http://xmlns.com/foaf/0.1/account> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://xmlns.com/foaf/0.1/account> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# http://xmlns.com/foaf/0.1/aimChatID
+<http://xmlns.com/foaf/0.1/aimChatID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://xmlns.com/foaf/0.1/aimChatID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# http://xmlns.com/foaf/0.1/holdsAccount
+<http://xmlns.com/foaf/0.1/holdsAccount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://xmlns.com/foaf/0.1/holdsAccount> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# http://xmlns.com/foaf/0.1/icqChatID
+<http://xmlns.com/foaf/0.1/icqChatID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://xmlns.com/foaf/0.1/icqChatID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# http://xmlns.com/foaf/0.1/interest
+<http://xmlns.com/foaf/0.1/interest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://xmlns.com/foaf/0.1/interest> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# http://xmlns.com/foaf/0.1/jabberID
+<http://xmlns.com/foaf/0.1/jabberID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://xmlns.com/foaf/0.1/jabberID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# http://xmlns.com/foaf/0.1/made
+<http://xmlns.com/foaf/0.1/made> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://xmlns.com/foaf/0.1/made> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# http://xmlns.com/foaf/0.1/maker
+<http://xmlns.com/foaf/0.1/maker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://xmlns.com/foaf/0.1/maker> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# http://xmlns.com/foaf/0.1/mbox
+<http://xmlns.com/foaf/0.1/mbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://xmlns.com/foaf/0.1/mbox> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# http://xmlns.com/foaf/0.1/mbox_sha1sum
+<http://xmlns.com/foaf/0.1/mbox_sha1sum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://xmlns.com/foaf/0.1/mbox_sha1sum> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# http://xmlns.com/foaf/0.1/member
+<http://xmlns.com/foaf/0.1/member> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://xmlns.com/foaf/0.1/member> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# http://xmlns.com/foaf/0.1/msnChatID
+<http://xmlns.com/foaf/0.1/msnChatID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://xmlns.com/foaf/0.1/msnChatID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# http://xmlns.com/foaf/0.1/openid
+<http://xmlns.com/foaf/0.1/openid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://xmlns.com/foaf/0.1/openid> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# http://xmlns.com/foaf/0.1/tipjar
+<http://xmlns.com/foaf/0.1/tipjar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://xmlns.com/foaf/0.1/tipjar> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# http://xmlns.com/foaf/0.1/topic_interest
+<http://xmlns.com/foaf/0.1/topic_interest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://xmlns.com/foaf/0.1/topic_interest> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# http://xmlns.com/foaf/0.1/weblog
+<http://xmlns.com/foaf/0.1/weblog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://xmlns.com/foaf/0.1/weblog> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# http://xmlns.com/foaf/0.1/yahooChatID
+<http://xmlns.com/foaf/0.1/yahooChatID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://xmlns.com/foaf/0.1/yahooChatID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://xmlns.com/foaf/0.1/age
+<http://xmlns.com/foaf/0.1/age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/age> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# http://xmlns.com/foaf/0.1/birthday
+<http://xmlns.com/foaf/0.1/birthday> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/birthday> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# http://xmlns.com/foaf/0.1/gender
+<http://xmlns.com/foaf/0.1/gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/gender> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# http://xmlns.com/foaf/0.1/skypeID
+<http://xmlns.com/foaf/0.1/skypeID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/skypeID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# http://xmlns.com/foaf/0.1/status
+<http://xmlns.com/foaf/0.1/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/status> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+# 
 # 
 # 
 # #################################################################
@@ -60,17 +192,348 @@
 # #################################################################
 # 
 # 
+# http://purl.org/dc/terms/Agent
+<http://purl.org/dc/terms/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/Agent> <http://www.w3.org/2002/07/owl#equivalentClass> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# http://purl.org/spar/bido-standard-bibliometric-measures#Quartile
+<http://purl.org/spar/bido-standard-bibliometric-measures#Quartile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/bido-standard-bibliometric-measures#Quartile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/bido-standard-bibliometric-measures#QuartileCategory> .
+<http://purl.org/spar/bido-standard-bibliometric-measures#Quartile> <http://www.w3.org/2000/01/rdf-schema#comment> "The quartile is an indicator that serves to evaluate the relative importance of a journal within the total number of journals in its area, e.g., Q1." .
+<http://purl.org/spar/bido-standard-bibliometric-measures#Quartile> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/spar/bido-core" .
+<http://purl.org/spar/bido-standard-bibliometric-measures#Quartile> <http://www.w3.org/2000/01/rdf-schema#label> "Quartile" .
+# 
+# http://purl.org/spar/bido-standard-bibliometric-measures#QuartileCategory
+<http://purl.org/spar/bido-standard-bibliometric-measures#QuartileCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/bido-standard-bibliometric-measures#QuartileCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/bido/CategorialBibliometricData> .
+<http://purl.org/spar/bido-standard-bibliometric-measures#QuartileCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "A list of journals ordered from highest to lowest impact factor is divided into four equal parts, each of these parts will be a quartile category: Q1, Q2, Q3, Q4." .
+<http://purl.org/spar/bido-standard-bibliometric-measures#QuartileCategory> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/spar/bido-core" .
+<http://purl.org/spar/bido-standard-bibliometric-measures#QuartileCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Quartile Category" .
+# 
 # http://purl.org/spar/bido/BibliometricMeasure
 <http://purl.org/spar/bido/BibliometricMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/spar/fabio/Abstract
+<http://purl.org/spar/fabio/Abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Abstract> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/Addendum
+<http://purl.org/spar/fabio/Addendum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Addendum> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/Article
+<http://purl.org/spar/fabio/Article> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Article> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/AudioDocument
+<http://purl.org/spar/fabio/AudioDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/AudioDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/Book
+<http://purl.org/spar/fabio/Book> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Book> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/BriefReport
+<http://purl.org/spar/fabio/BriefReport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/BriefReport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/CallForApplications
+<http://purl.org/spar/fabio/CallForApplications> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/CallForApplications> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/CaseForSupportDocument
+<http://purl.org/spar/fabio/CaseForSupportDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/CaseForSupportDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/Chapter
+<http://purl.org/spar/fabio/Chapter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Chapter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/Comment
+<http://purl.org/spar/fabio/Comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Comment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/ComputerProgram
+<http://purl.org/spar/fabio/ComputerProgram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/ComputerProgram> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/ConferencePoster
+<http://purl.org/spar/fabio/ConferencePoster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/ConferencePoster> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/Cover
+<http://purl.org/spar/fabio/Cover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Cover> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/DataFile
+<http://purl.org/spar/fabio/DataFile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/DataFile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/DataMangementPlan
+<http://purl.org/spar/fabio/DataMangementPlan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/DataMangementPlan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/Database
+<http://purl.org/spar/fabio/Database> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Database> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/DemoPaper
+<http://purl.org/spar/fabio/DemoPaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/DemoPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/DustJacket
+<http://purl.org/spar/fabio/DustJacket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/DustJacket> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/Editorial
+<http://purl.org/spar/fabio/Editorial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Editorial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/Email
+<http://purl.org/spar/fabio/Email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Email> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/Entry
+<http://purl.org/spar/fabio/Entry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Entry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/Excerpt
+<http://purl.org/spar/fabio/Excerpt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Excerpt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/Expression
+<http://purl.org/spar/fabio/Expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Expression> .
+<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+_:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Expression> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+_:genid3 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Expression> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#embodiment> .
+_:genid6 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/Manifestation> .
+<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:genid7 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/Work> .
+<http://purl.org/spar/fabio/Expression> <http://purl.org/dc/elements/1.1/description> "A fabio:Expression can only have part or be part of another fabio:Expression.  Moreover, it can be a representation only of a fabio:Work, and  it can be embodied only in fabio:Manifestation(s)."@en .
+<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#comment> "A subclass of FRBR expression, restricted to expressions of fabio:Works.  For your latest research paper, the preprint submitted to the publisher, and the final published version to which the publisher assigned a unique digital object identifier, are both expressions of the same work.  "@en .
+<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#label> "expression"@en .
+# 
+# http://purl.org/spar/fabio/ExpressionCollection
+<http://purl.org/spar/fabio/ExpressionCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/ExpressionCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+<http://purl.org/spar/fabio/ExpressionCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/Figure
+<http://purl.org/spar/fabio/Figure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Figure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/GanttChart
+<http://purl.org/spar/fabio/GanttChart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/GanttChart> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/GrantApplicationDocument
+<http://purl.org/spar/fabio/GrantApplicationDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/GrantApplicationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/Index
+<http://purl.org/spar/fabio/Index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Index> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/InstructionManual
+<http://purl.org/spar/fabio/InstructionManual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/InstructionManual> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
 # 
 # http://purl.org/spar/fabio/Journal
 <http://purl.org/spar/fabio/Journal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
+# http://purl.org/spar/fabio/LectureNotes
+<http://purl.org/spar/fabio/LectureNotes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/LectureNotes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/Letter
+<http://purl.org/spar/fabio/Letter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Letter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/Manifestation
+<http://purl.org/spar/fabio/Manifestation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Manifestation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#embodimentOf> .
+_:genid9 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/Manuscript
+<http://purl.org/spar/fabio/Manuscript> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Manuscript> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/MetadataDocument
+<http://purl.org/spar/fabio/MetadataDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/MetadataDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/Movie
+<http://purl.org/spar/fabio/Movie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Movie> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/Nanopublication
+<http://purl.org/spar/fabio/Nanopublication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Nanopublication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/NewsItem
+<http://purl.org/spar/fabio/NewsItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/NewsItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/Oration
+<http://purl.org/spar/fabio/Oration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Oration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/PeriodicalIssue
+<http://purl.org/spar/fabio/PeriodicalIssue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/PeriodicalIssue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/PeriodicalItem
+<http://purl.org/spar/fabio/PeriodicalItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/PeriodicalItem> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Expression> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid13 <http://www.w3.org/2002/07/owl#unionOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/PeriodicalIssue> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/PeriodicalVolume> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/spar/fabio/PeriodicalVolume
+<http://purl.org/spar/fabio/PeriodicalVolume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/PeriodicalVolume> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/PersonalCommunication
+<http://purl.org/spar/fabio/PersonalCommunication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/PersonalCommunication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/PhDSymposiumPaper
+<http://purl.org/spar/fabio/PhDSymposiumPaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/PhDSymposiumPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/PolicyDocument
+<http://purl.org/spar/fabio/PolicyDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/PolicyDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/PosterPaper
+<http://purl.org/spar/fabio/PosterPaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/PosterPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/Presentation
+<http://purl.org/spar/fabio/Presentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Presentation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/ProceedingsPaper
+<http://purl.org/spar/fabio/ProceedingsPaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/ProceedingsPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/ProjectPlan
+<http://purl.org/spar/fabio/ProjectPlan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/ProjectPlan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/Quotation
+<http://purl.org/spar/fabio/Quotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Quotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/RapidCommunication
+<http://purl.org/spar/fabio/RapidCommunication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/RapidCommunication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/ReportDocument
+<http://purl.org/spar/fabio/ReportDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/ReportDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/Repository
+<http://purl.org/spar/fabio/Repository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Repository> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/SpecificationDocument
+<http://purl.org/spar/fabio/SpecificationDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/SpecificationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/Spreadsheet
+<http://purl.org/spar/fabio/Spreadsheet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Spreadsheet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/Supplement
+<http://purl.org/spar/fabio/Supplement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Supplement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/SupplementaryInformation
+<http://purl.org/spar/fabio/SupplementaryInformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/SupplementaryInformation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/Table
+<http://purl.org/spar/fabio/Table> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Table> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/VocabularyDocument
+<http://purl.org/spar/fabio/VocabularyDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/VocabularyDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/WebContent
+<http://purl.org/spar/fabio/WebContent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/WebContent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/spar/fabio/Work
+<http://purl.org/spar/fabio/Work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Work> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realization> .
+_:genid17 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/Expression> .
+# 
+# http://purl.org/vocab/frbr/core#Expression
+<http://purl.org/vocab/frbr/core#Expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # http://www.w3.org/2002/07/owl#Thing
 <http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
+# http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "An agent (eg. person, group, software or physical artifact)." .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent" .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://xmlns.com/foaf/0.1/Group
+<http://xmlns.com/foaf/0.1/Group> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Group> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
+# 
 # http://xmlns.com/foaf/0.1/Person
 <http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
 # 
 # 
 # 
@@ -81,22 +544,62 @@
 # #################################################################
 # 
 # 
+# http://purl.org/spar/bido-standard-bibliometric-measures#author-number-documents
+<http://purl.org/spar/bido-standard-bibliometric-measures#author-number-documents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/bido-standard-bibliometric-measures#author-number-documents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
+<http://purl.org/spar/bido-standard-bibliometric-measures#author-number-documents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
+_:genid18 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> _:genid21 .
+_:genid21 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+_:genid20 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+_:genid22 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/spar/bido-standard-bibliometric-measures#author-number-documents> <http://www.w3.org/2000/01/rdf-schema#comment> "It is the count of all the documents or contributions published by a certain author." .
+<http://purl.org/spar/bido-standard-bibliometric-measures#author-number-documents> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/spar/bido-standard-bibliometric-measures" .
+<http://purl.org/spar/bido-standard-bibliometric-measures#author-number-documents> <http://www.w3.org/2000/01/rdf-schema#label> "author number documents" .
+# 
+# http://purl.org/spar/bido-standard-bibliometric-measures#paper-citation-count
+<http://purl.org/spar/bido-standard-bibliometric-measures#paper-citation-count> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/bido-standard-bibliometric-measures#paper-citation-count> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
+<http://purl.org/spar/bido-standard-bibliometric-measures#paper-citation-count> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
+_:genid24 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> _:genid27 .
+_:genid27 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+_:genid26 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+_:genid28 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Expression> .
+<http://purl.org/spar/bido-standard-bibliometric-measures#paper-citation-count> <http://www.w3.org/2000/01/rdf-schema#comment> "It is the count of all the citation received by one paper of a certain author."@en .
+<http://purl.org/spar/bido-standard-bibliometric-measures#paper-citation-count> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/spar/bido-standard-bibliometric-measures"@en .
+<http://purl.org/spar/bido-standard-bibliometric-measures#paper-citation-count> <http://www.w3.org/2000/01/rdf-schema#label> "paper citation count" .
+# 
 # http://purl.org/spar/bido/author-citation-count
 <http://purl.org/spar/bido/author-citation-count> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/spar/bido/author-citation-count> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
-<http://purl.org/spar/bido/author-citation-count> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid1 .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid1 <http://www.w3.org/2002/07/owl#onProperty> _:genid2 .
-_:genid2 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
-_:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid3 .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid3 <http://www.w3.org/2002/07/owl#onProperty> _:genid4 .
-_:genid4 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
-_:genid3 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid5 .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid5 <http://www.w3.org/2002/07/owl#onProperty> _:genid6 .
-_:genid6 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
-_:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/spar/bido/author-citation-count> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> _:genid31 .
+_:genid31 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
+_:genid30 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+_:genid32 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> _:genid35 .
+_:genid35 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+_:genid34 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://xmlns.com/foaf/0.1/Person> .
 <http://purl.org/spar/bido/author-citation-count> <http://www.w3.org/2000/01/rdf-schema#comment> "It is the count of all the citation received by all the papers of a certain author." .
 <http://purl.org/spar/bido/author-citation-count> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-standard-bibliometric-measures> .
 <http://purl.org/spar/bido/author-citation-count> <http://www.w3.org/2000/01/rdf-schema#label> "author citation count" .
@@ -104,19 +607,19 @@ _:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://xmlns.com/foaf/0.
 # http://purl.org/spar/bido/e-index
 <http://purl.org/spar/bido/e-index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/spar/bido/e-index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
-<http://purl.org/spar/bido/e-index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid7 .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid7 <http://www.w3.org/2002/07/owl#onProperty> _:genid8 .
-_:genid8 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
-_:genid7 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid9 .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid9 <http://www.w3.org/2002/07/owl#onProperty> _:genid10 .
-_:genid10 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
-_:genid9 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid11 .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid11 <http://www.w3.org/2002/07/owl#onProperty> _:genid12 .
-_:genid12 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
-_:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/spar/bido/e-index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> _:genid37 .
+_:genid37 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
+_:genid36 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> _:genid39 .
+_:genid39 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+_:genid38 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> _:genid41 .
+_:genid41 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+_:genid40 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://xmlns.com/foaf/0.1/Agent> .
 <http://purl.org/spar/bido/e-index> <http://www.w3.org/2000/01/rdf-schema#comment> "The e-index is aimed at considering the contributions of excess citations, which are mainly from highly cited papers. It is a necessary h-index complement, especially for evaluating highly cited scientists or for precisely comparing the scientific output of a group of scientists having an identical h-index." .
 <http://purl.org/spar/bido/e-index> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-standard-bibliometric-measures> .
 <http://purl.org/spar/bido/e-index> <http://www.w3.org/2000/01/rdf-schema#label> "e-index" .
@@ -124,19 +627,19 @@ _:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://xmlns.com/foaf/0
 # http://purl.org/spar/bido/h-index
 <http://purl.org/spar/bido/h-index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/spar/bido/h-index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
-<http://purl.org/spar/bido/h-index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid13 .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid13 <http://www.w3.org/2002/07/owl#onProperty> _:genid14 .
-_:genid14 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
-_:genid13 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid15 .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid15 <http://www.w3.org/2002/07/owl#onProperty> _:genid16 .
-_:genid16 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
-_:genid15 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid17 .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid17 <http://www.w3.org/2002/07/owl#onProperty> _:genid18 .
-_:genid18 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
-_:genid17 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/spar/bido/h-index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> _:genid43 .
+_:genid43 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
+_:genid42 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> _:genid45 .
+_:genid45 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+_:genid44 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> _:genid47 .
+_:genid47 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+_:genid46 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://xmlns.com/foaf/0.1/Agent> .
 <http://purl.org/spar/bido/h-index> <http://www.w3.org/2000/01/rdf-schema#comment> "The h-index is an index that attempts to measure both the productivity and impact of the published work of a scientist or scholar. The index is based on the set of the scientist's most cited papers and the number of citations that they have received in other publications. The index can also be applied to the productivity and impact of a group of scientists, such as a department or university or country, as well as a scholarly journal." .
 <http://purl.org/spar/bido/h-index> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-standard-bibliometric-measures> .
 <http://purl.org/spar/bido/h-index> <http://www.w3.org/2000/01/rdf-schema#label> "h-index" .
@@ -144,19 +647,19 @@ _:genid17 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://xmlns.com/foaf/0
 # http://purl.org/spar/bido/journal-impact-factor
 <http://purl.org/spar/bido/journal-impact-factor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/spar/bido/journal-impact-factor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
-<http://purl.org/spar/bido/journal-impact-factor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid19 .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid19 <http://www.w3.org/2002/07/owl#onProperty> _:genid20 .
-_:genid20 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
-_:genid19 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid21 .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid21 <http://www.w3.org/2002/07/owl#onProperty> _:genid22 .
-_:genid22 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
-_:genid21 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid23 .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid23 <http://www.w3.org/2002/07/owl#onProperty> _:genid24 .
-_:genid24 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
-_:genid23 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/Journal> .
+<http://purl.org/spar/bido/journal-impact-factor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> _:genid49 .
+_:genid49 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
+_:genid48 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> _:genid51 .
+_:genid51 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+_:genid50 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> _:genid53 .
+_:genid53 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+_:genid52 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/Journal> .
 <http://purl.org/spar/bido/journal-impact-factor> <http://www.w3.org/2000/01/rdf-schema#comment> "The impact factor of an academic journal is a measure reflecting the average number of citations to recent articles published in the journal. It is frequently used as a proxy for the relative importance of a journal within its field, with journals with higher impact factors deemed to be more important than those with lower ones." .
 <http://purl.org/spar/bido/journal-impact-factor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-standard-bibliometric-measures> .
 <http://purl.org/spar/bido/journal-impact-factor> <http://www.w3.org/2000/01/rdf-schema#label> "journal impact factor" .
