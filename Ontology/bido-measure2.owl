@@ -16,6 +16,8 @@
     <owl:Ontology rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures">
         <owl:versionIRI rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures/2015-07-15"/>
         <owl:imports rdf:resource="http://purl.org/spar/bido-core"/>
+        <dc:contributor>Mariela Tapia-Leon</dc:contributor>
+        <dc:contributor xml:lang="en">Ontology Engineering Group (OEG)</dc:contributor>
         <dc:creator>Enrico Motta</dc:creator>
         <dc:creator>Francesco Osborne</dc:creator>
         <dc:creator>Silvio Peroni</dc:creator>
