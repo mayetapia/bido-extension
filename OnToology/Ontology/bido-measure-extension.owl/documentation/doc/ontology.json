@@ -1,0 +1,7 @@
+[ {
+  "@id" : "urn:absolute:bidoext.linkeddata.es/ontology/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://purl.org/spar/bido-standard-bibliometric-measures/2015-07-15"
+  } ]
+} ]
