@@ -108,8 +108,8 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures#relatesToSubjectCategory">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment>An object property relating a journal with its area and discipline of study</rdfs:comment>
         <rdfs:isDefinedBy>http://purl.org/spar/bido-core</rdfs:isDefinedBy>
-        <rdfs:label>An object property relating a journal with its area and discipline of study</rdfs:label>
         <rdfs:label>relates to subject category</rdfs:label>
     </owl:ObjectProperty>
     
@@ -410,7 +410,9 @@
 
     <!-- http://purl.org/spar/bido/BibliometricMeasure -->
 
-    <owl:Class rdf:about="http://purl.org/spar/bido/BibliometricMeasure"/>
+    <owl:Class rdf:about="http://purl.org/spar/bido/BibliometricMeasure">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/bido/NumericBibliometricData"/>
+    </owl:Class>
     
 
 
