@@ -353,6 +353,17 @@
     
 
 
+    <!-- http://purl.org/spar/bido-standard-bibliometric-measures#QuartileCategory -->
+
+    <owl:Class rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures#QuartileCategory">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/bido/CategorialBibliometricData"/>
+        <rdfs:comment>A list of journals ordered from highest to lowest impact factor is divided into four equal parts, each of these parts will be a quartile category: Q1, Q2, Q3, Q4.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.org/spar/bido-core</rdfs:isDefinedBy>
+        <rdfs:label>Quartile Category</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/spar/bido/BibliometricMeasure -->
 
     <owl:Class rdf:about="http://purl.org/spar/bido/BibliometricMeasure"/>
