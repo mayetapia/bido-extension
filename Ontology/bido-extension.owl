@@ -93,6 +93,16 @@
     
 
 
+    <!-- http://purl.org/spar/bido-standard-bibliometric-measures#hasQuartile -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures#hasQuartile">
+        <rdfs:range rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures#Quartile"/>
+        <rdfs:comment>An object property relating a journal in determined area and discipline with its quartile.</rdfs:comment>
+        <rdfs:label>has quartile</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/spar/bido/hasMeasure -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/spar/bido/hasMeasure"/>
