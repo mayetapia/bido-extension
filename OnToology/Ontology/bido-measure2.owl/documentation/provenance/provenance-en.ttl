@@ -1,0 +1,14 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<http://purl.org/spar/bido-standard-bibliometric-measures/2015-07-15> a prov:Entity;
+	 dc:title "BiDO Standard Bibliometric Measures module (BiDO-Standard-Bibliometric-Measures)";
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo :agent2;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasRevisionOf <https://svn.code.sf.net/p/sempublishing/code/BiDO/bido-sbm-2014-07-14_1-0.owl>;
+.
+:agent0 a prov:Agent; foaf:name "Enrico Motta".
+:agent1 a prov:Agent; foaf:name "Francesco Osborne".
+:agent2 a prov:Agent; foaf:name "Silvio Peroni".
