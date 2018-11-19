@@ -17,7 +17,7 @@
         <owl:imports rdf:resource="http://purl.org/spar/bido-core"/>
         <dc:creator>Enrico Motta</dc:creator>
         <dc:creator>Francesco Osborne</dc:creator>
-        <dc:creator>Silvio Peroni</dc:creator>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silvio Peroni</dc:creator>
         <dc:date>2015-07-15</dc:date>
         <dc:description xml:lang="en">This module of BiDO describes a list of possible bibliometric measures tha can be used to define bibliometric data of publication-related entities, e.g.: h-index, e-index, journal impact factor, author citation count.</dc:description>
         <dc:rights>This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/).</dc:rights>
@@ -104,6 +104,42 @@
     
 
 
+    <!-- http://purl.org/vocab/frbr/core#embodiment -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/vocab/frbr/core#embodiment"/>
+    
+
+
+    <!-- http://purl.org/vocab/frbr/core#embodimentOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/vocab/frbr/core#embodimentOf"/>
+    
+
+
+    <!-- http://purl.org/vocab/frbr/core#part -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/vocab/frbr/core#part"/>
+    
+
+
+    <!-- http://purl.org/vocab/frbr/core#partOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/vocab/frbr/core#partOf"/>
+    
+
+
+    <!-- http://purl.org/vocab/frbr/core#realization -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/vocab/frbr/core#realization"/>
+    
+
+
+    <!-- http://purl.org/vocab/frbr/core#realizationOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/vocab/frbr/core#realizationOf"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -121,9 +157,557 @@
     
 
 
+    <!-- http://purl.org/spar/fabio/Abstract -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Abstract">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Addendum -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Addendum">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Article -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Article">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/AudioDocument -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/AudioDocument">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Book -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Book">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/BriefReport -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/BriefReport">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/CallForApplications -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/CallForApplications">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/CaseForSupportDocument -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/CaseForSupportDocument">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Chapter -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Chapter">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Comment -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Comment">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/ComputerProgram -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/ComputerProgram">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/ConferencePoster -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/ConferencePoster">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Cover -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Cover">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/DataFile -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/DataFile">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/DataMangementPlan -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/DataMangementPlan">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Database -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Database">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/DemoPaper -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/DemoPaper">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/DustJacket -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/DustJacket">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Editorial -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Editorial">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Email -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Email">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Entry -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Entry">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Excerpt -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Excerpt">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Expression -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Expression">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#part"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#partOf"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#embodiment"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/spar/fabio/Manifestation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#realizationOf"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/spar/fabio/Work"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="en">A fabio:Expression can only have part or be part of another fabio:Expression.  Moreover, it can be a representation only of a fabio:Work, and  it can be embodied only in fabio:Manifestation(s).</dc:description>
+        <rdfs:comment xml:lang="en">A subclass of FRBR expression, restricted to expressions of fabio:Works.  For your latest research paper, the preprint submitted to the publisher, and the final published version to which the publisher assigned a unique digital object identifier, are both expressions of the same work.  </rdfs:comment>
+        <rdfs:label xml:lang="en">expression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/ExpressionCollection -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/ExpressionCollection">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/Expression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Figure -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Figure">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/GanttChart -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/GanttChart">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/GrantApplicationDocument -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/GrantApplicationDocument">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Index -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Index">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/InstructionManual -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/InstructionManual">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/spar/fabio/Journal -->
 
     <owl:Class rdf:about="http://purl.org/spar/fabio/Journal"/>
+    
+
+
+    <!-- http://purl.org/spar/fabio/LectureNotes -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/LectureNotes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Letter -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Letter">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Manifestation -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Manifestation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#embodimentOf"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/spar/fabio/Expression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Manuscript -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Manuscript">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/MetadataDocument -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/MetadataDocument">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Movie -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Movie">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Nanopublication -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Nanopublication">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/NewsItem -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/NewsItem">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Oration -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Oration">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/PeriodicalIssue -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/PeriodicalIssue">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/PeriodicalItem -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/PeriodicalItem">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/spar/fabio/Expression"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#partOf"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.org/spar/fabio/PeriodicalIssue"/>
+                                    <rdf:Description rdf:about="http://purl.org/spar/fabio/PeriodicalVolume"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/PeriodicalVolume -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/PeriodicalVolume">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/PersonalCommunication -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/PersonalCommunication">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/PhDSymposiumPaper -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/PhDSymposiumPaper">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/PolicyDocument -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/PolicyDocument">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/PosterPaper -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/PosterPaper">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Presentation -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Presentation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/ProceedingsPaper -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/ProceedingsPaper">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/ProjectPlan -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/ProjectPlan">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Quotation -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Quotation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/RapidCommunication -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/RapidCommunication">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/ReportDocument -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/ReportDocument">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Repository -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Repository">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/SpecificationDocument -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/SpecificationDocument">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Spreadsheet -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Spreadsheet">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Supplement -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Supplement">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/SupplementaryInformation -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/SupplementaryInformation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Table -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Table">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/VocabularyDocument -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/VocabularyDocument">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/WebContent -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/WebContent">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Work -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Work">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#realization"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/spar/fabio/Expression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vocab/frbr/core#Expression -->
+
+    <owl:Class rdf:about="http://purl.org/vocab/frbr/core#Expression"/>
     
 
 
