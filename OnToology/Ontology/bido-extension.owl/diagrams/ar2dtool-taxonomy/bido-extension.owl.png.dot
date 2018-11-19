@@ -1,0 +1,29 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "owl:Thing" "base:NumericBibliometricData" "base:CategorialBibliometricData" "time:Interval" "skos:Concept" "http://www.essepuntato.it/2012/04/tvc/ValueInTime" "base:BibliometricDataInTime" "base:BibliometricData" "time:GeneralDateTimeDescription" "time:DateTimeInterval" "time:DurationDescription" "time:TemporalDuration" "time:Duration" "time:GeneralDurationDescription" "time:January" "time:ProperInterval" "time:TimePosition" "206d2914b75e6486d0a4f90cc742bd8c" "time:TemporalPosition" "time:TemporalEntity" "time:Year" "time:MonthOfYear" "time:DateTimeDescription" "time:TemporalUnit" "time:Instant" "time:DayOfWeek" "timeindexedsituation:TimeIndexedSituation" "situation:Situation" ; /*classes style*/
+	"time:TemporalEntity" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"base:BibliometricDataInTime" -> "http://www.essepuntato.it/2012/04/tvc/ValueInTime" [ label = "rdfs:subClassOf" ];
+	"timeindexedsituation:TimeIndexedSituation" -> "situation:Situation" [ label = "rdfs:subClassOf" ];
+	"time:DateTimeInterval" -> "time:ProperInterval" [ label = "rdfs:subClassOf" ];
+	"time:DayOfWeek" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"time:TemporalUnit" -> "time:TemporalDuration" [ label = "rdfs:subClassOf" ];
+	"base:NumericBibliometricData" -> "base:BibliometricData" [ label = "rdfs:subClassOf" ];
+	"time:Year" -> "time:DurationDescription" [ label = "rdfs:subClassOf" ];
+	"time:Interval" -> "time:TemporalEntity" [ label = "rdfs:subClassOf" ];
+	"time:MonthOfYear" -> "time:DateTimeDescription" [ label = "rdfs:subClassOf" ];
+	"time:GeneralDurationDescription" -> "time:TemporalDuration" [ label = "rdfs:subClassOf" ];
+	"time:GeneralDateTimeDescription" -> "time:TemporalPosition" [ label = "rdfs:subClassOf" ];
+	"time:DateTimeDescription" -> "time:GeneralDateTimeDescription" [ label = "rdfs:subClassOf" ];
+	"time:DurationDescription" -> "time:GeneralDurationDescription" [ label = "rdfs:subClassOf" ];
+	"time:TimePosition" -> "206d2914b75e6486d0a4f90cc742bd8c" [ label = "rdfs:subClassOf" ];
+	"time:TimePosition" -> "time:TemporalPosition" [ label = "rdfs:subClassOf" ];
+	"time:January" -> "time:DateTimeDescription" [ label = "rdfs:subClassOf" ];
+	"time:ProperInterval" -> "time:Interval" [ label = "rdfs:subClassOf" ];
+	"time:Instant" -> "time:TemporalEntity" [ label = "rdfs:subClassOf" ];
+	"base:CategorialBibliometricData" -> "base:BibliometricData" [ label = "rdfs:subClassOf" ];
+	"base:CategorialBibliometricData" -> "skos:Concept" [ label = "rdfs:subClassOf" ];
+	"time:Duration" -> "time:TemporalDuration" [ label = "rdfs:subClassOf" ];
+	"http://www.essepuntato.it/2012/04/tvc/ValueInTime" -> "timeindexedsituation:TimeIndexedSituation" [ label = "rdfs:subClassOf" ];
+
+}
