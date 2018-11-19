@@ -316,6 +316,17 @@
     
 
 
+    <!-- http://purl.org/spar/bido-standard-bibliometric-measures#rankInQuartile -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures#rankInQuartile">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>An object property relating a journal in determined area and discipline with the position it occupies in the quartile e.g., 2, 2/76, 2th (of 76).</rdfs:comment>
+        <rdfs:comment>rank in quartile</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.org/spar/bido-core</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://xmlns.com/foaf/0.1/age -->
 
     <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/age">
