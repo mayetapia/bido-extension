@@ -386,17 +386,6 @@
     
 
 
-    <!-- http://purl.org/spar/bido-standard-bibliometric-measures#Quartile -->
-
-    <owl:Class rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures#Quartile">
-        <rdfs:subClassOf rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures#QuartileCategory"/>
-        <rdfs:comment xml:lang="en">The quartile is an indicator that serves to evaluate the relative importance of a journal within the total number of journals in its area, e.g., Q1.</rdfs:comment>
-        <rdfs:isDefinedBy>http://purl.org/spar/bido-core</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">Quartile</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/spar/bido-standard-bibliometric-measures#QuartileCategory -->
 
     <owl:Class rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures#QuartileCategory">
@@ -1022,7 +1011,6 @@
     <!-- http://purl.org/spar/bido-standard-bibliometric-measures#Q1 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures#Q1">
-        <rdf:type rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures#Quartile"/>
         <rdfs:comment xml:lang="en">If a list of 1000 journals is ordered from highest to lowest impact factor, the journals between the number 1 to 250 are Quartile 1 (Q1).</rdfs:comment>
         <rdfs:isDefinedBy>http://purl.org/spar/bido-standard-bibliometric-measures</rdfs:isDefinedBy>
     </owl:NamedIndividual>
@@ -1032,7 +1020,6 @@
     <!-- http://purl.org/spar/bido-standard-bibliometric-measures#Q2 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures#Q2">
-        <rdf:type rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures#Quartile"/>
         <rdfs:comment xml:lang="en">If a list of 1000 journals is ordered from highest to lowest impact factor, the journals between the number 251 to 500 are Quartile 2 (Q2).</rdfs:comment>
         <rdfs:isDefinedBy>http://purl.org/spar/bido-standard-bibliometric-measures</rdfs:isDefinedBy>
     </owl:NamedIndividual>
@@ -1042,7 +1029,6 @@
     <!-- http://purl.org/spar/bido-standard-bibliometric-measures#Q3 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures#Q3">
-        <rdf:type rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures#Quartile"/>
         <rdfs:comment xml:lang="en">If a list of 1000 journals is ordered from highest to lowest impact factor, the journals between the number 501 to 750 are Quartile 3 (Q3).</rdfs:comment>
         <rdfs:isDefinedBy>http://purl.org/spar/bido-standard-bibliometric-measures</rdfs:isDefinedBy>
     </owl:NamedIndividual>
@@ -1052,7 +1038,6 @@
     <!-- http://purl.org/spar/bido-standard-bibliometric-measures#Q4 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures#Q4">
-        <rdf:type rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures#Quartile"/>
         <rdfs:comment xml:lang="en">If a list of 1000 journals is ordered from highest to lowest impact factor, the journals between the number 751 to 1000 are Quartile 4 (Q4).</rdfs:comment>
         <rdfs:isDefinedBy>http://purl.org/spar/bido-standard-bibliometric-measures</rdfs:isDefinedBy>
     </owl:NamedIndividual>
