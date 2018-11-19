@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; ":Quartile" "fabio:Supplement" "fabio:PersonalCommunication" "fabio:InstructionManual" "fabio:DemoPaper" "fabio:Addendum" "-54418d6d:1672b9b4149:-7ffc" "fabio:SupplementaryInformation" "fabio:Article" "fabio:ReportDocument" "http://purl.org/vocab/frbr/core#Expression" "fabio:Email" "fabio:Spreadsheet" "fabio:Presentation" "fabio:PolicyDocument" "fabio:Oration" "foaf:Group" "fabio:ExpressionCollection" "fabio:Letter" "fabio:DataMangementPlan" "fabio:BriefReport" "fabio:CallForApplications" "fabio:DustJacket" "foaf:Person" "fabio:Figure" "fabio:ProceedingsPaper" "fabio:PeriodicalVolume" "fabio:Movie" "fabio:Chapter" "fabio:Cover" "fabio:Nanopublication" "fabio:MetadataDocument" "fabio:Table" "fabio:ProjectPlan" "fabio:ConferencePoster" "fabio:PhDSymposiumPaper" ":QuartileCategory" "fabio:ComputerProgram" "foaf:Organization" "fabio:Book" "fabio:RapidCommunication" "fabio:PeriodicalIssue" "fabio:Editorial" "foaf:Agent" "fabio:WebContent" "fabio:Excerpt" "fabio:SpecificationDocument" "fabio:Abstract" "fabio:DataFile" "fabio:Quotation" "fabio:PosterPaper" "fabio:LectureNotes" "fabio:NewsItem" "fabio:Comment" "fabio:VocabularyDocument" "owl:Thing" "fabio:GanttChart" "fabio:GrantApplicationDocument" "fabio:Database" "fabio:Expression" "fabio:CaseForSupportDocument" "fabio:Index" "fabio:Entry" "fabio:Repository" "fabio:AudioDocument" "fabio:Manuscript" "base:NumericBibliometricData" "base:CategorialBibliometricData" "time:Interval" "skos:Concept" "http://www.essepuntato.it/2012/04/tvc/ValueInTime" "base:BibliometricDataInTime" "base:BibliometricData" "time:GeneralDateTimeDescription" "time:DateTimeInterval" "time:DurationDescription" "time:TemporalDuration" "time:Duration" "time:GeneralDurationDescription" "time:January" "time:ProperInterval" "time:TimePosition" "622dd6f17e635ef4dade67f3d309a96f" "time:TemporalPosition" "time:TemporalEntity" "time:Year" "time:MonthOfYear" "time:DateTimeDescription" "time:TemporalUnit" "time:Instant" "time:DayOfWeek" "timeindexedsituation:TimeIndexedSituation" "situation:Situation" ; /*classes style*/
+node [shape = rectangle, color="black"]; ":Quartile" "fabio:Supplement" "fabio:PersonalCommunication" "fabio:InstructionManual" "fabio:DemoPaper" "fabio:Addendum" "fabio:SupplementaryInformation" "fabio:Article" "fabio:ReportDocument" "http://purl.org/vocab/frbr/core#Expression" "fabio:Email" "fabio:Spreadsheet" "fabio:Presentation" "fabio:PolicyDocument" "fabio:Oration" "foaf:Group" "7f06ed21:1672c32ae4b:-7ffc" "fabio:ExpressionCollection" "fabio:Letter" "fabio:DataMangementPlan" "fabio:BriefReport" "fabio:CallForApplications" "fabio:DustJacket" "foaf:Person" "fabio:Figure" "fabio:ProceedingsPaper" "fabio:PeriodicalVolume" "fabio:Movie" "fabio:Chapter" "fabio:Cover" "fabio:Nanopublication" "fabio:MetadataDocument" "fabio:Table" "fabio:ProjectPlan" "fabio:ConferencePoster" "fabio:PhDSymposiumPaper" ":QuartileCategory" "fabio:ComputerProgram" "foaf:Organization" "fabio:Book" "fabio:RapidCommunication" "fabio:PeriodicalIssue" "fabio:Editorial" "foaf:Agent" "fabio:WebContent" "fabio:Excerpt" "fabio:SpecificationDocument" "fabio:Abstract" "fabio:DataFile" "fabio:Quotation" "fabio:PosterPaper" "fabio:LectureNotes" "fabio:NewsItem" "fabio:Comment" "fabio:VocabularyDocument" "owl:Thing" "fabio:GanttChart" "fabio:GrantApplicationDocument" "fabio:Database" "fabio:Expression" "fabio:CaseForSupportDocument" "fabio:Index" "fabio:Entry" "fabio:Repository" "fabio:AudioDocument" "fabio:Manuscript" "base:NumericBibliometricData" "base:CategorialBibliometricData" "time:Interval" "skos:Concept" "http://www.essepuntato.it/2012/04/tvc/ValueInTime" "base:BibliometricDataInTime" "base:BibliometricData" "time:GeneralDateTimeDescription" "time:DateTimeInterval" "time:DurationDescription" "time:TemporalDuration" "time:Duration" "time:GeneralDurationDescription" "time:January" "time:ProperInterval" "time:TimePosition" "6e38da099d3d5b5892a3ac2519120d6e" "time:TemporalPosition" "time:TemporalEntity" "time:Year" "time:MonthOfYear" "time:DateTimeDescription" "time:TemporalUnit" "time:Instant" "time:DayOfWeek" "timeindexedsituation:TimeIndexedSituation" "situation:Situation" ; /*classes style*/
 	"time:DateTimeDescription" -> "time:GeneralDateTimeDescription" [ label = "rdfs:subClassOf" ];
 	"fabio:Presentation" -> "fabio:Expression" [ label = "rdfs:subClassOf" ];
 	"time:Instant" -> "time:TemporalEntity" [ label = "rdfs:subClassOf" ];
@@ -37,13 +37,13 @@ node [shape = rectangle, color="black"]; ":Quartile" "fabio:Supplement" "fabio:P
 	"fabio:WebContent" -> "fabio:Expression" [ label = "rdfs:subClassOf" ];
 	"fabio:Email" -> "fabio:Expression" [ label = "rdfs:subClassOf" ];
 	"foaf:Organization" -> "foaf:Agent" [ label = "rdfs:subClassOf" ];
-	"fabio:Expression" -> "-54418d6d:1672b9b4149:-7ffc" [ label = "rdfs:subClassOf" ];
+	"fabio:Expression" -> "7f06ed21:1672c32ae4b:-7ffc" [ label = "rdfs:subClassOf" ];
 	"fabio:Expression" -> "http://purl.org/vocab/frbr/core#Expression" [ label = "rdfs:subClassOf" ];
 	"fabio:LectureNotes" -> "fabio:Expression" [ label = "rdfs:subClassOf" ];
 	"fabio:PolicyDocument" -> "fabio:Expression" [ label = "rdfs:subClassOf" ];
 	"fabio:Figure" -> "fabio:Expression" [ label = "rdfs:subClassOf" ];
 	"fabio:Abstract" -> "fabio:Expression" [ label = "rdfs:subClassOf" ];
-	"time:TimePosition" -> "622dd6f17e635ef4dade67f3d309a96f" [ label = "rdfs:subClassOf" ];
+	"time:TimePosition" -> "6e38da099d3d5b5892a3ac2519120d6e" [ label = "rdfs:subClassOf" ];
 	"time:TimePosition" -> "time:TemporalPosition" [ label = "rdfs:subClassOf" ];
 	"fabio:Spreadsheet" -> "fabio:Expression" [ label = "rdfs:subClassOf" ];
 	"timeindexedsituation:TimeIndexedSituation" -> "situation:Situation" [ label = "rdfs:subClassOf" ];
@@ -51,14 +51,14 @@ node [shape = rectangle, color="black"]; ":Quartile" "fabio:Supplement" "fabio:P
 	"fabio:PeriodicalIssue" -> "fabio:Expression" [ label = "rdfs:subClassOf" ];
 	"fabio:NewsItem" -> "fabio:Expression" [ label = "rdfs:subClassOf" ];
 	"fabio:PeriodicalVolume" -> "fabio:Expression" [ label = "rdfs:subClassOf" ];
-	"fabio:ComputerProgram" -> "fabio:Expression" [ label = "rdfs:subClassOf" ];
-	"fabio:Comment" -> "fabio:Expression" [ label = "rdfs:subClassOf" ];
-	"fabio:InstructionManual" -> "fabio:Expression" [ label = "rdfs:subClassOf" ];
-	"fabio:Manuscript" -> "fabio:Expression" [ label = "rdfs:subClassOf" ];
-	"fabio:Excerpt" -> "fabio:Expression" [ label = "rdfs:subClassOf" ];
-	"fabio:ConferencePoster" -> "fabio:Expression" [ label = "rdfs:subClassOf" ];
-	"fabio:Repository" -> "fabio:Expression" [ label = "rdfs:subClassOf" ];
 	"fabio:Quotation" -> "fabio:Expression" [ label = "rdfs:subClassOf" ];
+	"fabio:Comment" -> "fabio:Expression" [ label = "rdfs:subClassOf" ];
+	"fabio:Manuscript" -> "fabio:Expression" [ label = "rdfs:subClassOf" ];
+	"fabio:InstructionManual" -> "fabio:Expression" [ label = "rdfs:subClassOf" ];
+	"fabio:Excerpt" -> "fabio:Expression" [ label = "rdfs:subClassOf" ];
+	"fabio:Repository" -> "fabio:Expression" [ label = "rdfs:subClassOf" ];
+	"fabio:ConferencePoster" -> "fabio:Expression" [ label = "rdfs:subClassOf" ];
+	"fabio:ComputerProgram" -> "fabio:Expression" [ label = "rdfs:subClassOf" ];
 	"fabio:Movie" -> "fabio:Expression" [ label = "rdfs:subClassOf" ];
 	"time:GeneralDurationDescription" -> "time:TemporalDuration" [ label = "rdfs:subClassOf" ];
 	"fabio:Nanopublication" -> "fabio:Expression" [ label = "rdfs:subClassOf" ];

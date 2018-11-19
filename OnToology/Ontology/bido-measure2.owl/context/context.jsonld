@@ -288,7 +288,7 @@
       "@id" : "http://purl.org/spar/fabio/RapidCommunication"
     },
     "hasMeasure" : {
-      "@id" : "http://purl.org/spar/bido/hasMeasure",
+      "@id" : "http://purl.org/spar/bido-standard-bibliometric-measures#hasMeasure",
       "@type" : "@id"
     },
     "interest" : {
