@@ -51,6 +51,10 @@
 <http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> rdf:type owl:AnnotationProperty .
+
+
 #################################################################
 #    Object Properties
 #################################################################
@@ -67,24 +71,532 @@
 <http://purl.org/spar/bido/withBibliometricData> rdf:type owl:ObjectProperty .
 
 
+###  http://purl.org/vocab/frbr/core#embodiment
+<http://purl.org/vocab/frbr/core#embodiment> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/vocab/frbr/core#embodimentOf
+<http://purl.org/vocab/frbr/core#embodimentOf> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/vocab/frbr/core#part
+<http://purl.org/vocab/frbr/core#part> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/vocab/frbr/core#partOf
+<http://purl.org/vocab/frbr/core#partOf> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/vocab/frbr/core#realization
+<http://purl.org/vocab/frbr/core#realization> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/vocab/frbr/core#realizationOf
+<http://purl.org/vocab/frbr/core#realizationOf> rdf:type owl:ObjectProperty .
+
+
+###  http://xmlns.com/foaf/0.1/account
+<http://xmlns.com/foaf/0.1/account> rdf:type owl:ObjectProperty ;
+                                    rdfs:domain <http://xmlns.com/foaf/0.1/Agent> .
+
+
+###  http://xmlns.com/foaf/0.1/aimChatID
+<http://xmlns.com/foaf/0.1/aimChatID> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain <http://xmlns.com/foaf/0.1/Agent> .
+
+
+###  http://xmlns.com/foaf/0.1/holdsAccount
+<http://xmlns.com/foaf/0.1/holdsAccount> rdf:type owl:ObjectProperty ;
+                                         rdfs:domain <http://xmlns.com/foaf/0.1/Agent> .
+
+
+###  http://xmlns.com/foaf/0.1/icqChatID
+<http://xmlns.com/foaf/0.1/icqChatID> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain <http://xmlns.com/foaf/0.1/Agent> .
+
+
+###  http://xmlns.com/foaf/0.1/interest
+<http://xmlns.com/foaf/0.1/interest> rdf:type owl:ObjectProperty ;
+                                     rdfs:domain <http://xmlns.com/foaf/0.1/Agent> .
+
+
+###  http://xmlns.com/foaf/0.1/jabberID
+<http://xmlns.com/foaf/0.1/jabberID> rdf:type owl:ObjectProperty ;
+                                     rdfs:domain <http://xmlns.com/foaf/0.1/Agent> .
+
+
+###  http://xmlns.com/foaf/0.1/made
+<http://xmlns.com/foaf/0.1/made> rdf:type owl:ObjectProperty ;
+                                 rdfs:domain <http://xmlns.com/foaf/0.1/Agent> .
+
+
+###  http://xmlns.com/foaf/0.1/maker
+<http://xmlns.com/foaf/0.1/maker> rdf:type owl:ObjectProperty ;
+                                  rdfs:range <http://xmlns.com/foaf/0.1/Agent> .
+
+
+###  http://xmlns.com/foaf/0.1/mbox
+<http://xmlns.com/foaf/0.1/mbox> rdf:type owl:ObjectProperty ;
+                                 rdfs:domain <http://xmlns.com/foaf/0.1/Agent> .
+
+
+###  http://xmlns.com/foaf/0.1/mbox_sha1sum
+<http://xmlns.com/foaf/0.1/mbox_sha1sum> rdf:type owl:ObjectProperty ;
+                                         rdfs:domain <http://xmlns.com/foaf/0.1/Agent> .
+
+
+###  http://xmlns.com/foaf/0.1/member
+<http://xmlns.com/foaf/0.1/member> rdf:type owl:ObjectProperty ;
+                                   rdfs:range <http://xmlns.com/foaf/0.1/Agent> .
+
+
+###  http://xmlns.com/foaf/0.1/msnChatID
+<http://xmlns.com/foaf/0.1/msnChatID> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain <http://xmlns.com/foaf/0.1/Agent> .
+
+
+###  http://xmlns.com/foaf/0.1/openid
+<http://xmlns.com/foaf/0.1/openid> rdf:type owl:ObjectProperty ;
+                                   rdfs:domain <http://xmlns.com/foaf/0.1/Agent> .
+
+
+###  http://xmlns.com/foaf/0.1/tipjar
+<http://xmlns.com/foaf/0.1/tipjar> rdf:type owl:ObjectProperty ;
+                                   rdfs:domain <http://xmlns.com/foaf/0.1/Agent> .
+
+
+###  http://xmlns.com/foaf/0.1/topic_interest
+<http://xmlns.com/foaf/0.1/topic_interest> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <http://xmlns.com/foaf/0.1/Agent> .
+
+
+###  http://xmlns.com/foaf/0.1/weblog
+<http://xmlns.com/foaf/0.1/weblog> rdf:type owl:ObjectProperty ;
+                                   rdfs:domain <http://xmlns.com/foaf/0.1/Agent> .
+
+
+###  http://xmlns.com/foaf/0.1/yahooChatID
+<http://xmlns.com/foaf/0.1/yahooChatID> rdf:type owl:ObjectProperty ;
+                                        rdfs:domain <http://xmlns.com/foaf/0.1/Agent> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://xmlns.com/foaf/0.1/age
+<http://xmlns.com/foaf/0.1/age> rdf:type owl:DatatypeProperty ;
+                                rdfs:domain <http://xmlns.com/foaf/0.1/Agent> .
+
+
+###  http://xmlns.com/foaf/0.1/birthday
+<http://xmlns.com/foaf/0.1/birthday> rdf:type owl:DatatypeProperty ;
+                                     rdfs:domain <http://xmlns.com/foaf/0.1/Agent> .
+
+
+###  http://xmlns.com/foaf/0.1/gender
+<http://xmlns.com/foaf/0.1/gender> rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain <http://xmlns.com/foaf/0.1/Agent> .
+
+
+###  http://xmlns.com/foaf/0.1/skypeID
+<http://xmlns.com/foaf/0.1/skypeID> rdf:type owl:DatatypeProperty ;
+                                    rdfs:domain <http://xmlns.com/foaf/0.1/Agent> .
+
+
+###  http://xmlns.com/foaf/0.1/status
+<http://xmlns.com/foaf/0.1/status> rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain <http://xmlns.com/foaf/0.1/Agent> .
+
+
 #################################################################
 #    Classes
 #################################################################
 
+###  http://purl.org/dc/terms/Agent
+<http://purl.org/dc/terms/Agent> rdf:type owl:Class ;
+                                 owl:equivalentClass <http://xmlns.com/foaf/0.1/Agent> .
+
+
 ###  http://purl.org/spar/bido/BibliometricMeasure
 <http://purl.org/spar/bido/BibliometricMeasure> rdf:type owl:Class .
+
+
+###  http://purl.org/spar/fabio/Abstract
+<http://purl.org/spar/fabio/Abstract> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/Addendum
+<http://purl.org/spar/fabio/Addendum> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/Article
+<http://purl.org/spar/fabio/Article> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/AudioDocument
+<http://purl.org/spar/fabio/AudioDocument> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/Book
+<http://purl.org/spar/fabio/Book> rdf:type owl:Class ;
+                                  rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/BriefReport
+<http://purl.org/spar/fabio/BriefReport> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/CallForApplications
+<http://purl.org/spar/fabio/CallForApplications> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/CaseForSupportDocument
+<http://purl.org/spar/fabio/CaseForSupportDocument> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/Chapter
+<http://purl.org/spar/fabio/Chapter> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/Comment
+<http://purl.org/spar/fabio/Comment> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/ComputerProgram
+<http://purl.org/spar/fabio/ComputerProgram> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/ConferencePoster
+<http://purl.org/spar/fabio/ConferencePoster> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/Cover
+<http://purl.org/spar/fabio/Cover> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/DataFile
+<http://purl.org/spar/fabio/DataFile> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/DataMangementPlan
+<http://purl.org/spar/fabio/DataMangementPlan> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/Database
+<http://purl.org/spar/fabio/Database> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/DemoPaper
+<http://purl.org/spar/fabio/DemoPaper> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/DustJacket
+<http://purl.org/spar/fabio/DustJacket> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/Editorial
+<http://purl.org/spar/fabio/Editorial> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/Email
+<http://purl.org/spar/fabio/Email> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/Entry
+<http://purl.org/spar/fabio/Entry> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/Excerpt
+<http://purl.org/spar/fabio/Excerpt> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/Expression
+<http://purl.org/spar/fabio/Expression> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://purl.org/vocab/frbr/core#Expression> ,
+                                                        [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <http://purl.org/vocab/frbr/core#part> ;
+                                                                                 owl:allValuesFrom <http://purl.org/vocab/frbr/core#Expression>
+                                                                               ]
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <http://purl.org/vocab/frbr/core#partOf> ;
+                                                                                 owl:allValuesFrom <http://purl.org/vocab/frbr/core#Expression>
+                                                                               ]
+                                                                             ) ;
+                                                          rdf:type owl:Class
+                                                        ] ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty <http://purl.org/vocab/frbr/core#embodiment> ;
+                                                          owl:allValuesFrom <http://purl.org/spar/fabio/Manifestation>
+                                                        ] ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty <http://purl.org/vocab/frbr/core#realizationOf> ;
+                                                          owl:allValuesFrom <http://purl.org/spar/fabio/Work>
+                                                        ] ;
+                                        <http://purl.org/dc/elements/1.1/description> "A fabio:Expression can only have part or be part of another fabio:Expression.  Moreover, it can be a representation only of a fabio:Work, and  it can be embodied only in fabio:Manifestation(s)."@en ;
+                                        rdfs:comment "A subclass of FRBR expression, restricted to expressions of fabio:Works.  For your latest research paper, the preprint submitted to the publisher, and the final published version to which the publisher assigned a unique digital object identifier, are both expressions of the same work.  "@en ;
+                                        rdfs:label "expression"@en .
+
+
+###  http://purl.org/spar/fabio/ExpressionCollection
+<http://purl.org/spar/fabio/ExpressionCollection> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://purl.org/spar/fabio/Expression> ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://purl.org/vocab/frbr/core#part> ;
+                                                                    owl:someValuesFrom <http://purl.org/spar/fabio/Expression>
+                                                                  ] .
+
+
+###  http://purl.org/spar/fabio/Figure
+<http://purl.org/spar/fabio/Figure> rdf:type owl:Class ;
+                                    rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/GanttChart
+<http://purl.org/spar/fabio/GanttChart> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/GrantApplicationDocument
+<http://purl.org/spar/fabio/GrantApplicationDocument> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/Index
+<http://purl.org/spar/fabio/Index> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/InstructionManual
+<http://purl.org/spar/fabio/InstructionManual> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
 
 
 ###  http://purl.org/spar/fabio/Journal
 <http://purl.org/spar/fabio/Journal> rdf:type owl:Class .
 
 
+###  http://purl.org/spar/fabio/LectureNotes
+<http://purl.org/spar/fabio/LectureNotes> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/Letter
+<http://purl.org/spar/fabio/Letter> rdf:type owl:Class ;
+                                    rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/Manifestation
+<http://purl.org/spar/fabio/Manifestation> rdf:type owl:Class ;
+                                           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://purl.org/vocab/frbr/core#embodimentOf> ;
+                                                             owl:allValuesFrom <http://purl.org/spar/fabio/Expression>
+                                                           ] .
+
+
+###  http://purl.org/spar/fabio/Manuscript
+<http://purl.org/spar/fabio/Manuscript> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/MetadataDocument
+<http://purl.org/spar/fabio/MetadataDocument> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/Movie
+<http://purl.org/spar/fabio/Movie> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/Nanopublication
+<http://purl.org/spar/fabio/Nanopublication> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/NewsItem
+<http://purl.org/spar/fabio/NewsItem> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/Oration
+<http://purl.org/spar/fabio/Oration> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/PeriodicalIssue
+<http://purl.org/spar/fabio/PeriodicalIssue> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/PeriodicalItem
+<http://purl.org/spar/fabio/PeriodicalItem> rdf:type owl:Class ;
+                                            owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/spar/fabio/Expression>
+                                                                                       [ rdf:type owl:Restriction ;
+                                                                                         owl:onProperty <http://purl.org/vocab/frbr/core#partOf> ;
+                                                                                         owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                              owl:unionOf ( <http://purl.org/spar/fabio/PeriodicalIssue>
+                                                                                                                            <http://purl.org/spar/fabio/PeriodicalVolume>
+                                                                                                                          )
+                                                                                                            ]
+                                                                                       ]
+                                                                                     ) ;
+                                                                  rdf:type owl:Class
+                                                                ] .
+
+
+###  http://purl.org/spar/fabio/PeriodicalVolume
+<http://purl.org/spar/fabio/PeriodicalVolume> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/PersonalCommunication
+<http://purl.org/spar/fabio/PersonalCommunication> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/PhDSymposiumPaper
+<http://purl.org/spar/fabio/PhDSymposiumPaper> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/PolicyDocument
+<http://purl.org/spar/fabio/PolicyDocument> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/PosterPaper
+<http://purl.org/spar/fabio/PosterPaper> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/Presentation
+<http://purl.org/spar/fabio/Presentation> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/ProceedingsPaper
+<http://purl.org/spar/fabio/ProceedingsPaper> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/ProjectPlan
+<http://purl.org/spar/fabio/ProjectPlan> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/Quotation
+<http://purl.org/spar/fabio/Quotation> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/RapidCommunication
+<http://purl.org/spar/fabio/RapidCommunication> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/ReportDocument
+<http://purl.org/spar/fabio/ReportDocument> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/Repository
+<http://purl.org/spar/fabio/Repository> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/SpecificationDocument
+<http://purl.org/spar/fabio/SpecificationDocument> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/Spreadsheet
+<http://purl.org/spar/fabio/Spreadsheet> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/Supplement
+<http://purl.org/spar/fabio/Supplement> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/SupplementaryInformation
+<http://purl.org/spar/fabio/SupplementaryInformation> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/Table
+<http://purl.org/spar/fabio/Table> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/VocabularyDocument
+<http://purl.org/spar/fabio/VocabularyDocument> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/WebContent
+<http://purl.org/spar/fabio/WebContent> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://purl.org/spar/fabio/Work
+<http://purl.org/spar/fabio/Work> rdf:type owl:Class ;
+                                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://purl.org/vocab/frbr/core#realization> ;
+                                                    owl:allValuesFrom <http://purl.org/spar/fabio/Expression>
+                                                  ] .
+
+
+###  http://purl.org/vocab/frbr/core#Expression
+<http://purl.org/vocab/frbr/core#Expression> rdf:type owl:Class .
+
+
 ###  http://www.w3.org/2002/07/owl#Thing
 owl:Thing rdf:type owl:Class .
 
 
+###  http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class ;
+                                  rdfs:comment "An agent (eg. person, group, software or physical artifact)." ;
+                                  rdfs:label "Agent" ;
+                                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://xmlns.com/foaf/0.1/Group
+<http://xmlns.com/foaf/0.1/Group> rdf:type owl:Class ;
+                                  rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> .
+
+
+###  http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> .
+
+
 ###  http://xmlns.com/foaf/0.1/Person
-<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class .
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> .
 
 
 #################################################################
