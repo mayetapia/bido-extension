@@ -1057,84 +1057,6 @@
     
 
 
-    <!-- http://purl.org/spar/bido-standard-bibliometric-measures#author-number-documents -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures#author-number-documents">
-        <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty>
-                    <rdf:Description>
-                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
-                    </rdf:Description>
-                </owl:onProperty>
-                <owl:allValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty>
-                            <rdf:Description>
-                                <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
-                            </rdf:Description>
-                        </owl:onProperty>
-                        <owl:allValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty>
-                                    <rdf:Description>
-                                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
-                                    </rdf:Description>
-                                </owl:onProperty>
-                                <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-                            </owl:Restriction>
-                        </owl:allValuesFrom>
-                    </owl:Restriction>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdf:type>
-        <rdfs:comment>It is the count of all the documents or contributions published by a certain author.</rdfs:comment>
-        <rdfs:isDefinedBy>http://purl.org/spar/bido-standard-bibliometric-measures</rdfs:isDefinedBy>
-        <rdfs:label>author number documents</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/spar/bido-standard-bibliometric-measures#paper-citation-count -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures#paper-citation-count">
-        <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty>
-                    <rdf:Description>
-                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
-                    </rdf:Description>
-                </owl:onProperty>
-                <owl:allValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty>
-                            <rdf:Description>
-                                <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
-                            </rdf:Description>
-                        </owl:onProperty>
-                        <owl:allValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty>
-                                    <rdf:Description>
-                                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
-                                    </rdf:Description>
-                                </owl:onProperty>
-                                <owl:allValuesFrom rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
-                            </owl:Restriction>
-                        </owl:allValuesFrom>
-                    </owl:Restriction>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdf:type>
-        <rdfs:comment xml:lang="en">It is the count of all the citation received by one paper of a certain author.</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">http://purl.org/spar/bido-standard-bibliometric-measures</rdfs:isDefinedBy>
-        <rdfs:label>paper citation count</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://purl.org/spar/bido/author-citation-count -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/author-citation-count">
@@ -1170,6 +1092,45 @@
         <rdfs:comment>It is the count of all the citation received by all the papers of a certain author.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures"/>
         <rdfs:label>author citation count</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/author-number-documents -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/author-number-documents">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty>
+                            <rdf:Description>
+                                <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
+                            </rdf:Description>
+                        </owl:onProperty>
+                        <owl:allValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty>
+                                    <rdf:Description>
+                                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+                                    </rdf:Description>
+                                </owl:onProperty>
+                                <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+                            </owl:Restriction>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:comment>It is the count of all the documents or contributions published by a certain author.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.org/spar/bido-standard-bibliometric-measures</rdfs:isDefinedBy>
+        <rdfs:label>author number documents</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1287,6 +1248,45 @@
         <rdfs:comment>The impact factor of an academic journal is a measure reflecting the average number of citations to recent articles published in the journal. It is frequently used as a proxy for the relative importance of a journal within its field, with journals with higher impact factors deemed to be more important than those with lower ones.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures"/>
         <rdfs:label>journal impact factor</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/paper-citation-count -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/paper-citation-count">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty>
+                            <rdf:Description>
+                                <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
+                            </rdf:Description>
+                        </owl:onProperty>
+                        <owl:allValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty>
+                                    <rdf:Description>
+                                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+                                    </rdf:Description>
+                                </owl:onProperty>
+                                <owl:allValuesFrom rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+                            </owl:Restriction>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:comment xml:lang="en">It is the count of all the citation received by one paper of a certain author.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://purl.org/spar/bido-standard-bibliometric-measures</rdfs:isDefinedBy>
+        <rdfs:label>paper citation count</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
