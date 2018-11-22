@@ -1,0 +1,1296 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/spar/bido/"
+     xml:base="http://purl.org/spar/bido/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:fabio="http://purl.org/spar/fabio/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
+    <owl:Ontology rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures">
+        <owl:versionIRI rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures/2015-07-15"/>
+        <owl:imports rdf:resource="http://purl.org/spar/bido-core"/>
+        <dc:creator>Enrico Motta</dc:creator>
+        <dc:creator>Francesco Osborne</dc:creator>
+        <dc:creator>Silvio Peroni</dc:creator>
+        <dc:date>2015-07-15</dc:date>
+        <dc:description xml:lang="en">This module of BiDO describes a list of possible bibliometric measures tha can be used to define bibliometric data of publication-related entities, e.g.: h-index, e-index, journal impact factor, author citation count.</dc:description>
+        <dc:rights>This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/).</dc:rights>
+        <dc:title>BiDO Standard Bibliometric Measures module (BiDO-Standard-Bibliometric-Measures)</dc:title>
+        <rdfs:comment>The BiDO Standard Bibliometric Measures module (BiDO-Standard-Bibliometric-Measures) describes a list of possible bibliometric measures tha can be used to define bibliometric data of publication-related entities.
+
+**URL:** http://purl.org/spar/bido-standard-bibliometric-measures
+
+**Creators**: [Enrico Motta](https://orcid.org/0000-0003-0015-1952), [Francesco Osborne](https://orcid.org/0000-0001-6557-3131), [Silvio Peroni](http://orcid.org/0000-0003-0530-4305)
+
+**License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)
+
+**Website:** http://www.sparontologies.net/ontologies/bido
+
+**Cite as:** Osborne, F., Peroni, S., Motta, E. (2014). Clustering Citation Distributions for Semantic Categorization and Citation Prediction. In Proceedings of the 4th Workshop on Linked Science (LISC 2014): 24–35. http://ceur-ws.org/Vol-1282/lisc2014_submission_9.pdf</rdfs:comment>
+        <rdfs:label>BiDO-Standard-Bibliometric-Measures</rdfs:label>
+        <owl:priorVersion rdf:resource="https://svn.code.sf.net/p/sempublishing/code/BiDO/bido-sbm-2014-07-14_1-0.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/spar/bido-standard-bibliometric-measures#hasQuartile -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures#hasQuartile">
+        <rdfs:range rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures#Quartile"/>
+        <rdfs:comment>An object property relating a journal in determined area and discipline with its quartile.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.org/spar/bido-core</rdfs:isDefinedBy>
+        <rdfs:label>has quartile</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/bido-standard-bibliometric-measures#relatesToSubjectCategory -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures#relatesToSubjectCategory">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment>An object property relating a journal with its area and discipline of study</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.org/spar/bido-core</rdfs:isDefinedBy>
+        <rdfs:label>relates to subject category</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/bido/hasMeasure -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/bido/hasMeasure"/>
+    
+
+
+    <!-- http://purl.org/spar/bido/holdsBibliometricDataInTime -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+    
+
+
+    <!-- http://purl.org/spar/bido/withBibliometricData -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/bido/withBibliometricData"/>
+    
+
+
+    <!-- http://purl.org/vocab/frbr/core#embodiment -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/vocab/frbr/core#embodiment"/>
+    
+
+
+    <!-- http://purl.org/vocab/frbr/core#embodimentOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/vocab/frbr/core#embodimentOf"/>
+    
+
+
+    <!-- http://purl.org/vocab/frbr/core#part -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/vocab/frbr/core#part"/>
+    
+
+
+    <!-- http://purl.org/vocab/frbr/core#partOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/vocab/frbr/core#partOf"/>
+    
+
+
+    <!-- http://purl.org/vocab/frbr/core#realization -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/vocab/frbr/core#realization"/>
+    
+
+
+    <!-- http://purl.org/vocab/frbr/core#realizationOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/vocab/frbr/core#realizationOf"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/account -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/account">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/aimChatID -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/aimChatID">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/holdsAccount -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/holdsAccount">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/icqChatID -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/icqChatID">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/interest -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/interest">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/jabberID -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/jabberID">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/made -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/made">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/maker -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/maker">
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/mbox -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/mbox">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/mbox_sha1sum -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/mbox_sha1sum">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/member -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/member">
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/msnChatID -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/msnChatID">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/openid -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/openid">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/tipjar -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/tipjar">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/topic_interest -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/topic_interest">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/weblog -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/weblog">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/yahooChatID -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/yahooChatID">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/spar/bido-standard-bibliometric-measures#rankInQuartile -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures#rankInQuartile">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>An object property relating a journal in determined area and discipline with the position it occupies in the quartile e.g., 2, 2/76, 2th (of 76).</rdfs:comment>
+        <rdfs:comment>rank in quartile</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.org/spar/bido-core</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/age -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/age">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/birthday -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/birthday">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/gender -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/gender">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/skypeID -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/skypeID">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/status -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/status">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/Agent -->
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/Agent">
+        <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/bido-standard-bibliometric-measures#Quartile -->
+
+    <owl:Class rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures#Quartile">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures#QuartileCategory"/>
+        <rdfs:comment>The quartile is an indicator that serves to evaluate the relative importance of a journal within the total number of journals in its area, e.g., Q1.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.org/spar/bido-core</rdfs:isDefinedBy>
+        <rdfs:label>Quartile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/bido-standard-bibliometric-measures#QuartileCategory -->
+
+    <owl:Class rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures#QuartileCategory">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/bido/CategorialBibliometricData"/>
+        <rdfs:comment>A list of journals ordered from highest to lowest impact factor is divided into four equal parts, each of these parts will be a quartile category: Q1, Q2, Q3, Q4.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.org/spar/bido-core</rdfs:isDefinedBy>
+        <rdfs:label>Quartile Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/bido/BibliometricMeasure -->
+
+    <owl:Class rdf:about="http://purl.org/spar/bido/BibliometricMeasure">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/bido/NumericBibliometricData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Abstract -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Abstract">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Addendum -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Addendum">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Article -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Article">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/AudioDocument -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/AudioDocument">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Book -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Book">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/BriefReport -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/BriefReport">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/CallForApplications -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/CallForApplications">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/CaseForSupportDocument -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/CaseForSupportDocument">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Chapter -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Chapter">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Comment -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Comment">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/ComputerProgram -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/ComputerProgram">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/ConferencePoster -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/ConferencePoster">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Cover -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Cover">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/DataFile -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/DataFile">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/DataMangementPlan -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/DataMangementPlan">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Database -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Database">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/DemoPaper -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/DemoPaper">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/DustJacket -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/DustJacket">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Editorial -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Editorial">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Email -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Email">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Entry -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Entry">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Excerpt -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Excerpt">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Expression -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Expression">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#part"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#partOf"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#embodiment"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/spar/fabio/Manifestation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#realizationOf"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/spar/fabio/Work"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="en">A fabio:Expression can only have part or be part of another fabio:Expression.  Moreover, it can be a representation only of a fabio:Work, and  it can be embodied only in fabio:Manifestation(s).</dc:description>
+        <rdfs:comment xml:lang="en">A subclass of FRBR expression, restricted to expressions of fabio:Works.  For your latest research paper, the preprint submitted to the publisher, and the final published version to which the publisher assigned a unique digital object identifier, are both expressions of the same work.  </rdfs:comment>
+        <rdfs:label xml:lang="en">expression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/ExpressionCollection -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/ExpressionCollection">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/spar/fabio/Expression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Figure -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Figure">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/GanttChart -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/GanttChart">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/GrantApplicationDocument -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/GrantApplicationDocument">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Index -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Index">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/InstructionManual -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/InstructionManual">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Journal -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Journal"/>
+    
+
+
+    <!-- http://purl.org/spar/fabio/LectureNotes -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/LectureNotes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Letter -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Letter">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Manifestation -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Manifestation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#embodimentOf"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/spar/fabio/Expression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Manuscript -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Manuscript">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/MetadataDocument -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/MetadataDocument">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Movie -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Movie">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Nanopublication -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Nanopublication">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/NewsItem -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/NewsItem">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Oration -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Oration">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/PeriodicalIssue -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/PeriodicalIssue">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/PeriodicalItem -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/PeriodicalItem">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/spar/fabio/Expression"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#partOf"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.org/spar/fabio/PeriodicalIssue"/>
+                                    <rdf:Description rdf:about="http://purl.org/spar/fabio/PeriodicalVolume"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/PeriodicalVolume -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/PeriodicalVolume">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/PersonalCommunication -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/PersonalCommunication">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/PhDSymposiumPaper -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/PhDSymposiumPaper">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/PolicyDocument -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/PolicyDocument">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/PosterPaper -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/PosterPaper">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Presentation -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Presentation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/ProceedingsPaper -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/ProceedingsPaper">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/ProjectPlan -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/ProjectPlan">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Quotation -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Quotation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/RapidCommunication -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/RapidCommunication">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/ReportDocument -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/ReportDocument">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Repository -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Repository">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/SpecificationDocument -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/SpecificationDocument">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Spreadsheet -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Spreadsheet">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Supplement -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Supplement">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/SupplementaryInformation -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/SupplementaryInformation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Table -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Table">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/VocabularyDocument -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/VocabularyDocument">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/WebContent -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/WebContent">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Work -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Work">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#realization"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/spar/fabio/Expression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vocab/frbr/core#Expression -->
+
+    <owl:Class rdf:about="http://purl.org/vocab/frbr/core#Expression"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent">
+        <rdfs:comment>An agent (eg. person, group, software or physical artifact).</rdfs:comment>
+        <rdfs:label>Agent</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Group -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Group">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/spar/bido-standard-bibliometric-measures#Q1 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures#Q1">
+        <rdf:type rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures#Quartile"/>
+        <rdfs:comment>If a list of 1000 journals is ordered from highest to lowest impact factor, the journals between the number 1 to 250 are Quartile 1 (Q1).</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido-standard-bibliometric-measures#Q2 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures#Q2">
+        <rdf:type rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures#Quartile"/>
+        <rdfs:comment>If a list of 1000 journals is ordered from highest to lowest impact factor, the journals between the number 251 to 500 are Quartile 2 (Q2).</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido-standard-bibliometric-measures#Q3 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures#Q3">
+        <rdf:type rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures#Quartile"/>
+        <rdfs:comment>If a list of 1000 journals is ordered from highest to lowest impact factor, the journals between the number 501 to 750 are Quartile 3 (Q3).</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido-standard-bibliometric-measures#Q4 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures#Q4">
+        <rdf:type rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures#Quartile"/>
+        <rdfs:comment>If a list of 1000 journals is ordered from highest to lowest impact factor, the journals between the number 751 to 1000 are Quartile 4 (Q4).</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/author-citation-count -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/author-citation-count">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty>
+                            <rdf:Description>
+                                <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
+                            </rdf:Description>
+                        </owl:onProperty>
+                        <owl:allValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty>
+                                    <rdf:Description>
+                                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+                                    </rdf:Description>
+                                </owl:onProperty>
+                                <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+                            </owl:Restriction>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:comment>It is the count of all the citation received by all the papers of a certain author.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures"/>
+        <rdfs:label>author citation count</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/author-number-documents -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/author-number-documents">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty>
+                            <rdf:Description>
+                                <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
+                            </rdf:Description>
+                        </owl:onProperty>
+                        <owl:allValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty>
+                                    <rdf:Description>
+                                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+                                    </rdf:Description>
+                                </owl:onProperty>
+                                <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+                            </owl:Restriction>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:comment>It is the count of all the documents or contributions published by a certain author.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.org/spar/bido-standard-bibliometric-measures</rdfs:isDefinedBy>
+        <rdfs:label>author number documents</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/e-index -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/e-index">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty>
+                            <rdf:Description>
+                                <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
+                            </rdf:Description>
+                        </owl:onProperty>
+                        <owl:allValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty>
+                                    <rdf:Description>
+                                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+                                    </rdf:Description>
+                                </owl:onProperty>
+                                <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+                            </owl:Restriction>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:comment>The e-index is aimed at considering the contributions of excess citations, which are mainly from highly cited papers. It is a necessary h-index complement, especially for evaluating highly cited scientists or for precisely comparing the scientific output of a group of scientists having an identical h-index.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures"/>
+        <rdfs:label>e-index</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/h-index -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/h-index">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty>
+                            <rdf:Description>
+                                <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
+                            </rdf:Description>
+                        </owl:onProperty>
+                        <owl:allValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty>
+                                    <rdf:Description>
+                                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+                                    </rdf:Description>
+                                </owl:onProperty>
+                                <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+                            </owl:Restriction>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:comment>The h-index is an index that attempts to measure both the productivity and impact of the published work of a scientist or scholar. The index is based on the set of the scientist&apos;s most cited papers and the number of citations that they have received in other publications. The index can also be applied to the productivity and impact of a group of scientists, such as a department or university or country, as well as a scholarly journal.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures"/>
+        <rdfs:label>h-index</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/journal-impact-factor -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/journal-impact-factor">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty>
+                            <rdf:Description>
+                                <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
+                            </rdf:Description>
+                        </owl:onProperty>
+                        <owl:allValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty>
+                                    <rdf:Description>
+                                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+                                    </rdf:Description>
+                                </owl:onProperty>
+                                <owl:allValuesFrom rdf:resource="http://purl.org/spar/fabio/Journal"/>
+                            </owl:Restriction>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:comment>The impact factor of an academic journal is a measure reflecting the average number of citations to recent articles published in the journal. It is frequently used as a proxy for the relative importance of a journal within its field, with journals with higher impact factors deemed to be more important than those with lower ones.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures"/>
+        <rdfs:label>journal impact factor</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/paper-citation-count -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/paper-citation-count">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty>
+                            <rdf:Description>
+                                <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
+                            </rdf:Description>
+                        </owl:onProperty>
+                        <owl:allValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty>
+                                    <rdf:Description>
+                                        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+                                    </rdf:Description>
+                                </owl:onProperty>
+                                <owl:allValuesFrom rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+                            </owl:Restriction>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:comment xml:lang="en">It is the count of all the citation received by one paper of a certain author.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://purl.org/spar/bido-standard-bibliometric-measures</rdfs:isDefinedBy>
+        <rdfs:label>paper citation count</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
