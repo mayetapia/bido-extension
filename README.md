@@ -88,7 +88,7 @@ WHERE
 ?FI bido:hasNumericValue ?sjr .  
 }  
 ```
-[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)] (http://spar.linkeddata.es/sparql)  
+[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)](http://spar.linkeddata.es/sparql)  
 ### CQ5. How many publications have published in determinate quartile and in which area and discipline?
 ```
 prefix fabio:<http://purl.org/spar/fabio/>  
@@ -133,7 +133,7 @@ WHERE
 }  
 ORDER BY DESC(?numPaper) ?authorName  
 ```
-[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)] (http://spar.linkeddata.es/sparql)  
+[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)](http://spar.linkeddata.es/sparql)   
 ### CQ6. Which is the rank of the journal?
 ```
 prefix fabio:<http://purl.org/spar/fabio/>  
@@ -156,4 +156,4 @@ WHERE
 }  
 ORDER BY (xsd:integer(?rank))  
 ```
-[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)] (http://spar.linkeddata.es/sparql)  
+[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)](http://spar.linkeddata.es/sparql)  
