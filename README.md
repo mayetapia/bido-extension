@@ -110,6 +110,7 @@ WHERE
 }  
 ORDER BY ?Q DESC(?numPaper)  
 ```
+[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)](http://spar.linkeddata.es/sparql)  
 ```
 #publications by researcher   
 prefix fabio:<http://purl.org/spar/fabio/>  
