@@ -1,8 +1,8 @@
 # bido-extension
 Propose to extend the BiDO Standard Bibliometric Measures from SPAR Ontology Network   
-##Quering with SPARQL  
+## Quering with SPARQL  
 The competency questions and the queries is presented in this section. You can click in the play button to execute the query.  
-###CQ1. How many publications have a researcher?  
+### CQ1. How many publications have a researcher?  
 ```
 prefix fabio: <http://purl.org/spar/fabio/>  
 prefix bido: <http://purl.org/spar/bido-core/>  
@@ -24,8 +24,8 @@ bind(xsd:int(?numDocs2) as ?numDocs )
 GROUP BY ?name ?numDocs  
 ORDER BY DESC(?numDocs) ?authorName  
 ```
-[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)]  
-###CQ2. How many citations have a publication?  
+[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)](http://spar.linkeddata.es/sparql)  
+### CQ2. How many citations have a publication?  
 ```
 prefix fabio:<http://purl.org/spar/fabio/>  
 prefix bido: <http://purl.org/spar/bido-core/>  
@@ -45,8 +45,8 @@ bind(xsd:int(?numCitations2) as ?numCitations )
 }  
 ORDER BY DESC(?numCitations)  
 ```
-[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)]  
-###CQ3. Which is the h-index of the journal?
+[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)](http://spar.linkeddata.es/sparql)  
+### CQ3. Which is the h-index of the journal?
 ```
 prefix fabio:<http://purl.org/spar/fabio/>  
 prefix bido: <http://purl.org/spar/bido-core/>  
@@ -66,7 +66,8 @@ bind(xsd:int(?hindex2) as ?hindex )
 }  
 ORDER BY  DESC(?hindex)  
 ```
-###CQ4. How many publications have been published in journals with SJR or JCR?
+[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)](http://spar.linkeddata.es/sparql)  
+### CQ4. How many publications have been published in journals with SJR or JCR?
 ```
 prefix fabio:<http://purl.org/spar/fabio/>  
 prefix bido: <http://purl.org/spar/bido-core/>  
@@ -87,8 +88,8 @@ WHERE
 ?FI bido:hasNumericValue ?sjr .  
 }  
 ```
-[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)]  
-##CQ5. How many publications have published in determinate quartile and in which area and discipline?
+[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)] (http://spar.linkeddata.es/sparql)  
+### CQ5. How many publications have published in determinate quartile and in which area and discipline?
 ```
 prefix fabio:<http://purl.org/spar/fabio/>  
 prefix bido: <http://purl.org/spar/bido-core/>  
@@ -132,8 +133,8 @@ WHERE
 }  
 ORDER BY DESC(?numPaper) ?authorName  
 ```
-[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)]  
-###CQ6. Which is the rank of the journal?
+[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)] (http://spar.linkeddata.es/sparql)  
+### CQ6. Which is the rank of the journal?
 ```
 prefix fabio:<http://purl.org/spar/fabio/>  
 prefix bido: <http://purl.org/spar/bido-core/>  
@@ -155,4 +156,4 @@ WHERE
 }  
 ORDER BY (xsd:integer(?rank))  
 ```
-[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)]  
+[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)] (http://spar.linkeddata.es/sparql)  
