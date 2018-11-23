@@ -4,7 +4,8 @@ This graph and table explain the extension to the BiDO Standard Bibliometric Mea
 ![terms](https://user-images.githubusercontent.com/43136359/48908602-1372c480-ee6b-11e8-900e-917115366209.JPG)
 ## Quering with SPARQL  
 The competency questions and the queries is presented in this section. You can click in the play button to execute the query.  
-### CQ1. How many publications have a researcher?  
+### CQ1. How many publications have a researcher? 
+(Pendiente de resolver un error en el servidor: DB.DBA.GROUP_CONCAT_DISTINCT pero en el virtuoso local sí me funciona)
 ```
 prefix fabio: <http://purl.org/spar/fabio/>  
 prefix bido: <http://purl.org/spar/bido-core/>  
