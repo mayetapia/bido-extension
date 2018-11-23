@@ -47,7 +47,7 @@ bind(xsd:int(?numCitations2) as ?numCitations )
 }  
 ORDER BY DESC(?numCitations)  
 ```
-[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)](http://spar.linkeddata.es/sparql)  
+[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)](https://bit.ly/2Qhzx37)  
 ### CQ3. Which is the h-index of the journal?
 ```
 prefix fabio:<http://purl.org/spar/fabio/>  
@@ -68,7 +68,7 @@ bind(xsd:int(?hindex2) as ?hindex )
 }  
 ORDER BY  DESC(?hindex)  
 ```
-[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)](http://spar.linkeddata.es/sparql)  
+[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)](https://bit.ly/2R9AR5d)  
 ### CQ4. How many publications have been published in journals with SJR or JCR?
 ```
 prefix fabio:<http://purl.org/spar/fabio/>  
@@ -90,7 +90,7 @@ WHERE
 ?FI bido:hasNumericValue ?sjr .  
 }  
 ```
-[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)](http://spar.linkeddata.es/sparql)  
+[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)](https://bit.ly/2S76NYc)  
 ### CQ5. How many publications have published in determinate quartile and in which area and discipline?
 ```
 prefix fabio:<http://purl.org/spar/fabio/>  
