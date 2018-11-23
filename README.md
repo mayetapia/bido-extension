@@ -112,7 +112,7 @@ WHERE
 }  
 ORDER BY ?Q DESC(?numPaper)  
 ```
-[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)](http://spar.linkeddata.es/sparql)  
+[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)](https://bit.ly/2BsF7HP)  
 ### Publications by researcher 
 ```
   
@@ -137,7 +137,7 @@ WHERE
 }  
 ORDER BY DESC(?numPaper) ?authorName  
 ```
-[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)](http://spar.linkeddata.es/sparql)   
+[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)](https://bit.ly/2PMo8sK)   
 ### CQ6. Which is the rank of the journal?
 ```
 prefix fabio:<http://purl.org/spar/fabio/>  
@@ -160,4 +160,4 @@ WHERE
 }  
 ORDER BY (xsd:integer(?rank))  
 ```
-[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)](http://spar.linkeddata.es/sparql)  
+[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)](https://bit.ly/2S7coxG)  
