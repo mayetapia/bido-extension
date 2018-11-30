@@ -7,6 +7,7 @@ These graphs and table explain the extension to the BiDO Standard Bibliometric M
 ![paper citation count](https://user-images.githubusercontent.com/43136359/49304447-a7c4d300-f4cc-11e8-9f54-1abc9890fb03.png)
 -----------------------------------------------------------------------------------------------------------------------------------
 ![terms](https://user-images.githubusercontent.com/43136359/49304551-f6726d00-f4cc-11e8-8b63-06f48ebe3fac.JPG)
+
 Where C = Class; OP = Object Property; DP = Data Property; NI = Name Individual
 
 ## Quering with SPARQL  
