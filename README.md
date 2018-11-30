@@ -1,4 +1,4 @@
-# bido-extension
+# BiDO Ontology Extension
 These graphs and table explain the extension to the BiDO Standard Bibliometric Measures Module from SPAR Ontology Network.
 ![quartile and rank example](https://user-images.githubusercontent.com/43136359/49281638-56492380-f48d-11e8-8c7e-334c1bbf89e1.jpeg)
 -----------------------------------------------------------------------------------------------------------------------------------
