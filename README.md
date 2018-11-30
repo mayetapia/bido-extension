@@ -1,7 +1,7 @@
 # bido-extension
 This graph and table explain the extension to the BiDO Standard Bibliometric Measures Module from SPAR Ontology Network.
-![quartile and rank example](https://user-images.githubusercontent.com/43136359/48908321-394b9980-ee6a-11e8-839a-b033f6f3f4bd.jpeg)
-![terms](https://user-images.githubusercontent.com/43136359/48908602-1372c480-ee6b-11e8-900e-917115366209.JPG)
+![quartile and rank example](https://user-images.githubusercontent.com/43136359/49281638-56492380-f48d-11e8-8c7e-334c1bbf89e1.jpeg)
+
 ## Quering with SPARQL  
 The competency questions and the queries is presented in this section. You can click in the play button to execute the query.  
 ### CQ1. How many publications have a researcher? 
