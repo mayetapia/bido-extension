@@ -7,6 +7,7 @@ These graphs and table explain the extension to the BiDO Standard Bibliometric M
 ![paper citation count](https://user-images.githubusercontent.com/43136359/49304447-a7c4d300-f4cc-11e8-9f54-1abc9890fb03.png)
 -----------------------------------------------------------------------------------------------------------------------------------
 ![terms](https://user-images.githubusercontent.com/43136359/49304551-f6726d00-f4cc-11e8-8b63-06f48ebe3fac.JPG)
+Where C = Class; OP = Object Property; DP = Data Property; NI = Name Individual
 
 ## Quering with SPARQL  
 The competency questions and the queries is presented in this section. You can click in the play button to execute the query.  
@@ -33,7 +34,7 @@ bind(xsd:int(?numDocs2) as ?numDocs )
 GROUP BY ?name ?numDocs  
 ORDER BY DESC(?numDocs) ?authorName  
 ```
-[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)](http://spar.linkeddata.es/sparql)  
+[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)](https://bit.ly/2Rq6MyG)  
 ### CQ2. How many citations does a publication have? 
 ```
 prefix fabio:<http://purl.org/spar/fabio/>  
