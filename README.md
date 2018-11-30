@@ -1,10 +1,13 @@
 # bido-extension
-This graph and table explain the extension to the BiDO Standard Bibliometric Measures Module from SPAR Ontology Network.
+These graphs and table explain the extension to the BiDO Standard Bibliometric Measures Module from SPAR Ontology Network.
 ![quartile and rank example](https://user-images.githubusercontent.com/43136359/49281638-56492380-f48d-11e8-8c7e-334c1bbf89e1.jpeg)
+![author num docs](https://user-images.githubusercontent.com/43136359/49303926-4f410600-f4cb-11e8-9407-8541b6ea6676.jpeg)
+![paper citation count](https://user-images.githubusercontent.com/43136359/49303964-67b12080-f4cb-11e8-9788-33eda1c3fdd6.png)
+
 
 ## Quering with SPARQL  
 The competency questions and the queries is presented in this section. You can click in the play button to execute the query.  
-### CQ1. How many publications have a researcher? 
+### CQ1. How many publications does a researcher have?
 (Pendiente de resolver un error en el servidor: DB.DBA.GROUP_CONCAT_DISTINCT pero en el virtuoso local sí me funciona)
 ```
 prefix fabio: <http://purl.org/spar/fabio/>  
@@ -28,7 +31,7 @@ GROUP BY ?name ?numDocs
 ORDER BY DESC(?numDocs) ?authorName  
 ```
 [![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)](http://spar.linkeddata.es/sparql)  
-### CQ2. How many citations have a publication?  
+### CQ2. How many citations does a publication have? 
 ```
 prefix fabio:<http://purl.org/spar/fabio/>  
 prefix bido: <http://purl.org/spar/bido-core/>  
@@ -70,7 +73,7 @@ bind(xsd:int(?hindex2) as ?hindex )
 ORDER BY  DESC(?hindex)  
 ```
 [![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)](https://bit.ly/2R9AR5d)  
-### CQ4. How many publications have been published in journals with SJR or JCR?
+### CQ4. How many publications have been published in journals indexed in SJR or JCR?
 ```
 prefix fabio:<http://purl.org/spar/fabio/>  
 prefix bido: <http://purl.org/spar/bido-core/>  
@@ -92,7 +95,7 @@ WHERE
 }  
 ```
 [![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)](https://bit.ly/2S76NYc)  
-### CQ5. How many publications have published in determinate quartile and in which area and discipline?
+### CQ5. How many publications have been published in a specific quartile and in which area and discipline?
 ```
 prefix fabio:<http://purl.org/spar/fabio/>  
 prefix bido: <http://purl.org/spar/bido-core/>  
