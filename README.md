@@ -12,7 +12,6 @@ Where C = Class; OP = Object Property; DP = Data Property; NI = Name Individual
 ## Quering with SPARQL  
 The competency questions and the queries is presented in this section. You can click in the play button to execute the query.  
 ### CQ1. How many publications does a researcher have?
-(Pendiente de resolver un error en el servidor: DB.DBA.GROUP_CONCAT_DISTINCT pero en el virtuoso local sí me funciona)
 ```
 prefix fabio: <http://purl.org/spar/fabio/>  
 prefix bido: <http://purl.org/spar/bido-core/>  
