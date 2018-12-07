@@ -2,9 +2,9 @@
 These graphs and table explain the extension to the BiDO Standard Bibliometric Measures Module from SPAR Ontology Network.
 ![quartile and rank example](https://user-images.githubusercontent.com/43136359/49281638-56492380-f48d-11e8-8c7e-334c1bbf89e1.jpeg)
 -----------------------------------------------------------------------------------------------------------------------------------
-![author num docs](https://user-images.githubusercontent.com/43136359/49303926-4f410600-f4cb-11e8-9407-8541b6ea6676.jpeg)
+![author num docs](https://user-images.githubusercontent.com/43136359/49667421-f91f1600-fa28-11e8-90e6-cb98664321c1.jpeg)
 -----------------------------------------------------------------------------------------------------------------------------------
-![paper citation count](https://user-images.githubusercontent.com/43136359/49304447-a7c4d300-f4cc-11e8-9f54-1abc9890fb03.png)
+![paper citation count](https://user-images.githubusercontent.com/43136359/49667442-105e0380-fa29-11e8-8aa2-9d1a9f745fc5.jpeg)
 -----------------------------------------------------------------------------------------------------------------------------------
 ![terms](https://user-images.githubusercontent.com/43136359/49304551-f6726d00-f4cc-11e8-8b63-06f48ebe3fac.JPG)
 
