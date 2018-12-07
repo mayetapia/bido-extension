@@ -17,6 +17,7 @@ The competency questions and the queries is presented in this section. You can c
 prefix bido: <http://purl.org/spar/bido-core/>  
 prefix frbr: <http://purl.org/vocab/frbr/core/>  
 prefix dcterms: <http://purl.org/dc/terms/>  
+
 SELECT DISTINCT ?numDocs ?name AS ?authorName  (group_concat(?orgName; separator="; ") as ?affils)  
 WHERE  
 {  
