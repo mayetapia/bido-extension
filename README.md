@@ -49,13 +49,13 @@ prefix dcterms: <http://purl.org/dc/terms/>
 SELECT DISTINCT ?numCitations ?paperTitle  
 WHERE  
 {  
-?paper bido:holdsBibliometricDataInTime ?paperMeasure .  
-?biblio frbr:realization ?paper ;  
+ ?paper bido:holdsBibliometricDataInTime ?paperMeasure .  
+ ?biblio frbr:realization ?paper ;  
         dcterms:title ?paperTitle .  
-?paperMeasure bido:withBibliometricData ?paperCitations .  
-?paperCitations bido:hasMeasure <http://purl.org/spar/bido/paper-citation-count> ;  
+ ?paperMeasure bido:withBibliometricData ?paperCitations .  
+ ?paperCitations bido:hasMeasure <http://purl.org/spar/bido/paper-citation-count> ;  
                  bido:hasNumericValue ?numCitations2.  
-bind(xsd:int(?numCitations2) as ?numCitations )  
+ bind(xsd:int(?numCitations2) as ?numCitations )  
 }  
 ORDER BY DESC(?numCitations)  
 ```
@@ -70,13 +70,13 @@ prefix dcterms: <http://purl.org/dc/terms/>
 SELECT DISTINCT ?hindex ?nameSource  
 WHERE  
 {  
-?source bido:holdsBibliometricDataInTime ?SMY ;  
+ ?source bido:holdsBibliometricDataInTime ?SMY ;  
         foaf:name ?nameSource .      
-?SMY bido:withBibliometricData ?FI ;  
+ ?SMY bido:withBibliometricData ?FI ;  
      bido:accordingTo  "SJR".  
-?FI bido:hasMeasure <http://purl.org/spar/bido/h-index> .  
-?FI bido:hasNumericValue ?hindex2 .  
-bind(xsd:int(?hindex2) as ?hindex )  
+ ?FI bido:hasMeasure <http://purl.org/spar/bido/h-index> .  
+ ?FI bido:hasNumericValue ?hindex2 .  
+ bind(xsd:int(?hindex2) as ?hindex )  
 }  
 ORDER BY  DESC(?hindex)  
 ```
@@ -91,15 +91,15 @@ prefix dcterms: <http://purl.org/dc/terms/>
 SELECT DISTINCT (count(?paper) as ?num) ?kind  
 WHERE  
 {  
-?paper rdf:type ?kind ;  
+ ?paper rdf:type ?kind ;  
        frbr:partOf ?source .  
-?source bido:holdsBibliometricDataInTime ?SMY .        
-?SMY bido:withBibliometricData ?FI ;  
+ ?source bido:holdsBibliometricDataInTime ?SMY .        
+ ?SMY bido:withBibliometricData ?FI ;  
      bido:accordingTo  "SJR".  
      OPTIONAL  
     { ?SMY bido:accordingTo "JCR" . }  
-?FI bido:hasMeasure <http://purl.org/spar/bido/journal-impact-factor> .  
-?FI bido:hasNumericValue ?sjr .  
+ ?FI bido:hasMeasure <http://purl.org/spar/bido/journal-impact-factor> .  
+ ?FI bido:hasNumericValue ?sjr .  
 }  
 ```
 [![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)](https://bit.ly/2S76NYc)  
@@ -113,14 +113,14 @@ prefix dcterms: <http://purl.org/dc/terms/>
 SELECT DISTINCT (count(?paper) AS ?numPaper) ?nameDisc ?nameArea ?Q  
 WHERE  
 {  
-?paper frbr:partOf ?source .  
-?source bido:holdsBibliometricDataInTime ?SMY .  
-?SMY bido:withBibliometricData ?SYAD .  
-?SYAD bido:relatesToSubjectCategory ?disc ;  
+ ?paper frbr:partOf ?source .  
+ ?source bido:holdsBibliometricDataInTime ?SMY .  
+ ?SMY bido:withBibliometricData ?SYAD .  
+ ?SYAD bido:relatesToSubjectCategory ?disc ;  
       bido:hasQuartile ?Q .  
-?disc skos:prefLabel ?nameDisc ;  
+ ?disc skos:prefLabel ?nameDisc ;  
       skos:broader ?area .  
-?area skos:prefLabel ?nameArea .  
+ ?area skos:prefLabel ?nameArea .  
 }  
 ORDER BY ?Q DESC(?numPaper)  
 ```
@@ -136,16 +136,16 @@ prefix dcterms: <http://purl.org/dc/terms/>
 SELECT DISTINCT  ?authorName (count(?paper) AS ?numPaper) ?nameDisc ?nameArea ?Q ?author  
 WHERE  
 {  
-?author foaf:name ?authorName ;  
+ ?author foaf:name ?authorName ;  
         dcterms:creator ?paper .  
-?paper frbr:partOf ?source .  
-?source bido:holdsBibliometricDataInTime ?SMY .  
-?SMY bido:withBibliometricData ?SYAD .  
-?SYAD bido:relatesToSubjectCategory ?disc ;  
+ ?paper frbr:partOf ?source .  
+ ?source bido:holdsBibliometricDataInTime ?SMY .  
+ ?SMY bido:withBibliometricData ?SYAD .  
+ ?SYAD bido:relatesToSubjectCategory ?disc ;  
       bido:hasQuartile ?Q .  
-?disc skos:prefLabel ?nameDisc ;  
+ ?disc skos:prefLabel ?nameDisc ;  
       skos:broader ?area .  
-?area skos:prefLabel ?nameArea .  
+ ?area skos:prefLabel ?nameArea .  
 }  
 ORDER BY DESC(?numPaper) ?authorName  
 ```
@@ -160,15 +160,15 @@ prefix dcterms: <http://purl.org/dc/terms/>
 SELECT DISTINCT  ?rank ?Q ?nameSource  
 WHERE  
 {  
-?source foaf:name ?nameSource ;  
+ ?source foaf:name ?nameSource ;  
         bido:holdsBibliometricDataInTime ?SMY .  
-?SMY bido:withBibliometricData ?SYAD .  
-?SYAD bido:relatesToSubjectCategory ?disc ;  
+ ?SMY bido:withBibliometricData ?SYAD .  
+ ?SYAD bido:relatesToSubjectCategory ?disc ;  
       bido:hasQuartile ?Q ;  
       bido:rankInQuartile ?rank .  
-?disc skos:prefLabel ?nameDisc ;  
+ ?disc skos:prefLabel ?nameDisc ;  
       skos:broader ?area .  
-?area skos:prefLabel ?nameArea .  
+ ?area skos:prefLabel ?nameArea .  
 }  
 ORDER BY (xsd:integer(?rank))  
 ```
