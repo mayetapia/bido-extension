@@ -2,9 +2,9 @@
 These graphs and table explain the extension to the BiDO Standard Bibliometric Measures Module from SPAR Ontology Network.
 ![quartile and rank example](https://user-images.githubusercontent.com/43136359/49281638-56492380-f48d-11e8-8c7e-334c1bbf89e1.jpeg)
 -----------------------------------------------------------------------------------------------------------------------------------
-![author num docs](https://user-images.githubusercontent.com/43136359/49303926-4f410600-f4cb-11e8-9407-8541b6ea6676.jpeg)
+![author num docs](https://user-images.githubusercontent.com/43136359/49667421-f91f1600-fa28-11e8-90e6-cb98664321c1.jpeg)
 -----------------------------------------------------------------------------------------------------------------------------------
-![paper citation count](https://user-images.githubusercontent.com/43136359/49304447-a7c4d300-f4cc-11e8-9f54-1abc9890fb03.png)
+![paper citation count](https://user-images.githubusercontent.com/43136359/49667442-105e0380-fa29-11e8-8aa2-9d1a9f745fc5.jpeg)
 -----------------------------------------------------------------------------------------------------------------------------------
 ![terms](https://user-images.githubusercontent.com/43136359/49304551-f6726d00-f4cc-11e8-8b63-06f48ebe3fac.JPG)
 
@@ -14,27 +14,31 @@ Where C = Class; OP = Object Property; DP = Data Property; NI = Name Individual
 The competency questions and the queries is presented in this section. You can click in the play button to execute the query.  
 ### CQ1. How many publications does a researcher have?
 ```
-prefix fabio: <http://purl.org/spar/fabio/>  
 prefix bido: <http://purl.org/spar/bido-core/>  
 prefix frbr: <http://purl.org/vocab/frbr/core/>  
 prefix dcterms: <http://purl.org/dc/terms/>  
-  
-SELECT DISTINCT ?numDocs ?name AS ?authorName  (group_concat(distinct ?orgName; separator="; ") as ?affils)  
+
+SELECT DISTINCT ?numDocs ?name AS ?authorName  (group_concat(?orgName; separator="; ") as ?affils)  
 WHERE  
 {  
-?author bido:holdsBibliometricDataInTime ?authorMeasure ;   
+ {
+  SELECT DISTINCT ?numDocs ?name ?orgName WHERE 
+  {
+   ?author bido:holdsBibliometricDataInTime ?authorMeasure ;   
              foaf:name ?name .  
-?org foaf:member ?author ;  
+   ?org foaf:member ?author ;  
         foaf:name ?orgName .  
-?authorMeasure bido:withBibliometricData ?authorDocNumber .  
-?authorDocNumber bido:hasMeasure <http://purl.org/spar/bido/author-number-documents> ;  
+   ?authorMeasure bido:withBibliometricData ?authorDocNumber .  
+   ?authorDocNumber bido:hasMeasure <http://purl.org/spar/bido/author-number-documents> ;  
             bido:hasNumericValue ?numDocs2.  
-bind(xsd:int(?numDocs2) as ?numDocs )  
-}   
+  bind(xsd:int(?numDocs2) as ?numDocs )  
+  }  
+ }
+} 
 GROUP BY ?name ?numDocs  
 ORDER BY DESC(?numDocs) ?authorName  
 ```
-[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)](https://bit.ly/2Rq6MyG)  
+[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)](https://bit.ly/2L5bgIz)  
 ### CQ2. How many citations does a publication have? 
 ```
 prefix fabio:<http://purl.org/spar/fabio/>  
@@ -76,7 +80,7 @@ bind(xsd:int(?hindex2) as ?hindex )
 }  
 ORDER BY  DESC(?hindex)  
 ```
-[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)](https://bit.ly/2R9AR5d)  
+[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)](https://bit.ly/2L5bgIz)  
 ### CQ4. How many publications have been published in journals indexed in SJR or JCR?
 ```
 prefix fabio:<http://purl.org/spar/fabio/>  
