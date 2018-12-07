@@ -33,7 +33,7 @@ bind(xsd:int(?numDocs2) as ?numDocs )
 GROUP BY ?name ?numDocs  
 ORDER BY DESC(?numDocs) ?authorName  
 ```
-[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)](https://bit.ly/2Rq6MyG)  
+[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)](https://bit.ly/2L5bgIz)  
 ### CQ2. How many citations does a publication have? 
 ```
 prefix fabio:<http://purl.org/spar/fabio/>  
