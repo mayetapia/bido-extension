@@ -20,16 +20,20 @@ prefix dcterms: <http://purl.org/dc/terms/>
 SELECT DISTINCT ?numDocs ?name AS ?authorName  (group_concat(?orgName; separator="; ") as ?affils)  
 WHERE  
 {  
- {SELECT DISTINCT ?numDocs ?name ?orgName WHERE {
-?author bido:holdsBibliometricDataInTime ?authorMeasure ;   
+ {
+  SELECT DISTINCT ?numDocs ?name ?orgName WHERE 
+  {
+   ?author bido:holdsBibliometricDataInTime ?authorMeasure ;   
              foaf:name ?name .  
-?org foaf:member ?author ;  
+   ?org foaf:member ?author ;  
         foaf:name ?orgName .  
-?authorMeasure bido:withBibliometricData ?authorDocNumber .  
-?authorDocNumber bido:hasMeasure <http://purl.org/spar/bido/author-number-documents> ;  
+   ?authorMeasure bido:withBibliometricData ?authorDocNumber .  
+   ?authorDocNumber bido:hasMeasure <http://purl.org/spar/bido/author-number-documents> ;  
             bido:hasNumericValue ?numDocs2.  
-bind(xsd:int(?numDocs2) as ?numDocs )  
-}  }} 
+  bind(xsd:int(?numDocs2) as ?numDocs )  
+  }  
+ }
+} 
 GROUP BY ?name ?numDocs  
 ORDER BY DESC(?numDocs) ?authorName  
 ```
