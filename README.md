@@ -14,14 +14,13 @@ Where C = Class; OP = Object Property; DP = Data Property; NI = Name Individual
 The competency questions and the queries is presented in this section. You can click in the play button to execute the query.  
 ### CQ1. How many publications does a researcher have?
 ```
-prefix fabio: <http://purl.org/spar/fabio/>  
 prefix bido: <http://purl.org/spar/bido-core/>  
 prefix frbr: <http://purl.org/vocab/frbr/core/>  
 prefix dcterms: <http://purl.org/dc/terms/>  
-  
-SELECT DISTINCT ?numDocs ?name AS ?authorName  (group_concat(distinct ?orgName; separator="; ") as ?affils)  
+SELECT DISTINCT ?numDocs ?name AS ?authorName  (group_concat(?orgName; separator="; ") as ?affils)  
 WHERE  
 {  
+ {SELECT DISTINCT ?numDocs ?name ?orgName WHERE {
 ?author bido:holdsBibliometricDataInTime ?authorMeasure ;   
              foaf:name ?name .  
 ?org foaf:member ?author ;  
@@ -30,7 +29,7 @@ WHERE
 ?authorDocNumber bido:hasMeasure <http://purl.org/spar/bido/author-number-documents> ;  
             bido:hasNumericValue ?numDocs2.  
 bind(xsd:int(?numDocs2) as ?numDocs )  
-}   
+}  }} 
 GROUP BY ?name ?numDocs  
 ORDER BY DESC(?numDocs) ?authorName  
 ```
@@ -76,7 +75,7 @@ bind(xsd:int(?hindex2) as ?hindex )
 }  
 ORDER BY  DESC(?hindex)  
 ```
-[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)](https://bit.ly/2R9AR5d)  
+[![play](https://user-images.githubusercontent.com/43136359/47848297-3959fb80-ddce-11e8-8124-4f86d53d4d2a.png)](https://bit.ly/2L5bgIz)  
 ### CQ4. How many publications have been published in journals indexed in SJR or JCR?
 ```
 prefix fabio:<http://purl.org/spar/fabio/>  
