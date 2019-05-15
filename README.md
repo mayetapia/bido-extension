@@ -12,6 +12,8 @@ Where C = Class; OP = Object Property; DP = Data Property; NI = Name Individual
 
 ## Quering with SPARQL  
 The competency questions and the queries is presented in this section. You can click in the play button to execute the query.  
+For publishing the RDF, we employed the triple database [OpenLink Virtuoso](https://virtuoso.openlinksw.com/). The URI to access our endpoint to do any query to our data is http://spar.linkeddata.es/sparql, and the graph URI is http://spar.linkeddata.es/graph/bido.
+
 ### CQ1. How many publications does a researcher have?
 ```
 prefix bido: <http://purl.org/spar/bido-core/>  
